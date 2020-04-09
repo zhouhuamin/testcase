@@ -1,0 +1,1180 @@
+RDOC 018116: [21:51:46]             core.cpp( 421) - Log     - RenderDoc v1.8 Windows 64-bit Release (ba04b8403a3f4e0470259375acb22be5e5442f23) loaded in replay application
+RDOC 018116: [21:51:46]         settings.cpp( 459) - Log     - Loading config from C:\Users\zhouhm\AppData\Roaming\renderdoc\renderdoc.conf
+QTRD 018116: [21:51:46]       qrenderdoc.cpp(  88) - Log     - QRenderDoc initialising.
+RDOC 018116: [21:51:46]    android_tools.cpp( 354) - Log     - Initialising adb using 'E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe'
+RDOC 018116: [21:51:48]     d3d11_replay.cpp( 122) - Log     - Running replay on nVidia / NVIDIA GeForce MX150 26.21.14.3140
+RDOC 018116: [21:51:49]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 root'
+RDOC 018116: [21:51:49]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.product.manufacturer'
+RDOC 018116: [21:51:49]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.product.model'
+RDOC 018116: [21:51:49]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.build.version.sdk'
+RDOC 018116: [21:51:50]    win32_network.cpp( 339) - Warning - recv: WSAECONNRESET: An existing connection was forcibly closed by the remote host.
+RDOC 018116: [21:51:50]         streamio.cpp( 415) - Warning - Error reading from socket
+RDOC 018116: [21:51:50]    remote_server.cpp(1194) - Warning - Didn't get proper handshake
+RDOC 018116: [21:51:50]     d3d12_replay.cpp( 139) - Log     - Running replay on nVidia / NVIDIA GeForce MX150 26.21.14.3140
+RDOC 018116: [21:51:51]        vk_replay.cpp(4015) - Log     - Created device.
+RDOC 018116: [21:51:52]    win32_network.cpp( 339) - Warning - recv: WSAECONNABORTED: An established connection was aborted by the software in your host machine.
+RDOC 018116: [21:51:52]         streamio.cpp( 415) - Warning - Error reading from socket
+RDOC 018116: [21:51:52]    remote_server.cpp(1194) - Warning - Didn't get proper handshake
+RDOC 018116: [21:51:52]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.build.version.sdk'
+RDOC 018116: [21:51:52]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm list packages org.renderdoc.renderdoccmd'
+RDOC 018116: [21:51:52]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.product.cpu.abi'
+RDOC 018116: [21:51:52]          android.cpp( 883) - Log     - Starting RenderDoc server, supported ABIs:
+RDOC 018116: [21:51:52]          android.cpp( 885) - Log     -   - armeabi_v7a
+RDOC 018116: [21:51:52]          android.cpp( 885) - Log     -   - arm64_v8a
+RDOC 018116: [21:51:52]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.product.cpu.abi'
+RDOC 018116: [21:51:52]          android.cpp( 330) - Log     - Checking for server APK in E:\21-hoperun\03-release\1807_logging_build1\RenderDoc_1807_logging1_64/plugins/android/
+RDOC 018116: [21:51:52]          android.cpp( 337) - Log     - APKs found: E:\21-hoperun\03-release\1807_logging_build1\RenderDoc_1807_logging1_64/plugins/android/
+RDOC 018116: [21:51:52]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 install -r -g "E:\21-hoperun\03-release\1807_logging_build1\RenderDoc_1807_logging1_64/plugins/android/org.renderdoc.renderdoccmd.arm32.apk"'
+RDOC 018116: [21:51:56]          android.cpp( 368) - Log     - Installed package 'E:\21-hoperun\03-release\1807_logging_build1\RenderDoc_1807_logging1_64/plugins/android/org.renderdoc.renderdoccmd.arm32.apk', checking for success...
+RDOC 018116: [21:51:56]          android.cpp( 225) - Log     - Checking installed version of org.renderdoc.renderdoccmd.arm32 on 17d6ca25
+RDOC 018116: [21:51:56]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm dump org.renderdoc.renderdoccmd.arm32'
+RDOC 018116: [21:51:57]          android.cpp( 266) - Log     - Installed server version (18:ba04b8403a3f4e0470259375acb22be5e5442f23) is compatible
+RDOC 018116: [21:51:57]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 install -r -g "E:\21-hoperun\03-release\1807_logging_build1\RenderDoc_1807_logging1_64/plugins/android/org.renderdoc.renderdoccmd.arm64.apk"'
+RDOC 018116: [21:52:00]          android.cpp( 368) - Log     - Installed package 'E:\21-hoperun\03-release\1807_logging_build1\RenderDoc_1807_logging1_64/plugins/android/org.renderdoc.renderdoccmd.arm64.apk', checking for success...
+RDOC 018116: [21:52:00]          android.cpp( 225) - Log     - Checking installed version of org.renderdoc.renderdoccmd.arm64 on 17d6ca25
+RDOC 018116: [21:52:00]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm dump org.renderdoc.renderdoccmd.arm64'
+RDOC 018116: [21:52:00]          android.cpp( 266) - Log     - Installed server version (18:ba04b8403a3f4e0470259375acb22be5e5442f23) is compatible
+RDOC 018116: [21:52:00]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm list packages org.renderdoc.renderdoccmd'
+RDOC 018116: [21:52:01]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell am force-stop org.renderdoc.renderdoccmd.arm32'
+RDOC 018116: [21:52:01]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell am force-stop org.renderdoc.renderdoccmd.arm64'
+RDOC 018116: [21:52:01]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 forward tcp:38969 localabstract:renderdoc_39920'
+RDOC 018116: [21:52:01]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 forward tcp:38960 localabstract:renderdoc_38920'
+RDOC 018116: [21:52:02]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell am start -n org.renderdoc.renderdoccmd.arm64/.Loader -e renderdoccmd remoteserver'
+RDOC 018116: [21:52:03]    win32_network.cpp( 339) - Warning - recv: WSAECONNABORTED: An established connection was aborted by the software in your host machine.
+RDOC 018116: [21:52:03]         streamio.cpp( 415) - Warning - Error reading from socket
+RDOC 018116: [21:52:03]    remote_server.cpp(1194) - Warning - Didn't get proper handshake
+RDOC 018116: [21:52:04]    win32_network.cpp( 339) - Warning - recv: WSAECONNABORTED: An established connection was aborted by the software in your host machine.
+RDOC 018116: [21:52:04]         streamio.cpp( 415) - Warning - Error reading from socket
+RDOC 018116: [21:52:04]    remote_server.cpp(1194) - Warning - Didn't get proper handshake
+RDOC 018116: [21:52:11]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.build.version.sdk'
+RDOC 018116: [21:52:13]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm list packages -3'
+RDOC 018116: [21:52:14]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell dumpsys package'
+ADRD 028107: [05:52:19]    posix_network.cpp( 312) - Warning - Timeout in recv
+ADRD 028107: [05:52:19]         streamio.cpp( 415) - Warning - Error reading from socket
+ADRD 028107: [05:52:19]    remote_server.cpp( 894) - Log     - Closing active connection from 127.0.0.1.
+ADRD 028107: [05:52:19]    remote_server.cpp( 896) - Log     - Ready for new active connection...
+RDOC 018116: [21:52:19]          android.cpp( 525) - Log     - Timer Fetching android packages and activities - 5729.984 ms
+RDOC 018116: [21:52:19]    win32_network.cpp( 339) - Warning - recv: WSAECONNABORTED: An established connection was aborted by the software in your host machine.
+RDOC 018116: [21:52:19]         streamio.cpp( 415) - Warning - Error reading from socket
+ADRD 028107: [05:52:25]    remote_server.cpp(1055) - Log     - Connection received from 127.0.0.1.
+ADRD 028107: [05:52:25]    remote_server.cpp(1088) - Log     - Making active connection
+RDOC 018116: [21:52:26]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.build.version.sdk'
+RDOC 018116: [21:52:27]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm list packages -3'
+RDOC 018116: [21:52:27]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell dumpsys package'
+RDOC 018116: [21:52:29]          android.cpp( 525) - Log     - Timer Fetching android packages and activities - 2325.983 ms
+RDOC 018116: [21:52:31]    android_patch.cpp( 482) - Log     - Checking that APK is debuggable
+RDOC 018116: [21:52:31]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell dumpsys package com.netease.blqx.mi'
+RDOC 018116: [21:52:32]    android_patch.cpp( 514) - Log     - com.netease.blqx.mi/#DefaultActivity is not debuggable
+RDOC 018116: [21:52:32]    android_patch.cpp( 448) - Log     - Checking for root access on 17d6ca25
+RDOC 018116: [21:52:32]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 root'
+RDOC 018116: [21:52:32]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell whoami'
+RDOC 018116: [21:52:32]    android_patch.cpp( 519) - Log     - Root access detected
+RDOC 018116: [21:52:33]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell cmd package resolve-activity -c android.intent.category.LAUNCHER com.netease.blqx.mi'
+RDOC 018116: [21:52:33]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell cmd package resolve-activity com.netease.blqx.mi/com.netease.blqx.Launcher'
+RDOC 018116: [21:52:34]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 forward --remove tcp:39501'
+RDOC 018116: [21:52:34]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell am force-stop com.netease.blqx.mi'
+RDOC 018116: [21:52:34]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell getprop ro.build.version.sdk'
+RDOC 018116: [21:52:34]          android.cpp(1062) - Log     - Using pre-Android 10 Vulkan layering and JDWP injection
+RDOC 018116: [21:52:34]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell setprop debug.vulkan.layers VK_LAYER_RENDERDOC_Capture'
+RDOC 018116: [21:52:34]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell setprop debug.vr.profiler 1'
+RDOC 018116: [21:52:34]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell mkdir -p /sdcard/Android/data/com.netease.blqx.mi'
+RDOC 018116: [21:52:35]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell mkdir -p /sdcard/Android/data/com.netease.blqx.mi/files'
+RDOC 018116: [21:52:35]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell setprop debug.rdoc.RENDERDOC_CAPOPTS ababaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaa'
+RDOC 018116: [21:52:35]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 push "C:\Users\zhouhm\AppData\Roaming\renderdoc\renderdoc.conf" /sdcard/Android/data/com.netease.blqx.mi/files'
+RDOC 018116: [21:52:35]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm path com.netease.blqx.mi'
+RDOC 018116: [21:52:35]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell ls /data/app/com.netease.blqx.mi-oHFrSZCG28RBemeNyEP9Hg==//lib/*/libVkLayer_GLES_RenderDoc.so'
+RDOC 018116: [21:52:35]          android.cpp(1115) - Log     - No library found in /data/app/com.netease.blqx.mi-oHFrSZCG28RBemeNyEP9Hg==//lib/*/libVkLayer_GLES_RenderDoc.so for com.netease.blqx.mi - assuming injection is required.
+RDOC 018116: [21:52:35]          android.cpp(1125) - Log     - Launching package 'com.netease.blqx.mi' with activity 'com.netease.blqx.Launcher'
+RDOC 018116: [21:52:35]          android.cpp(1129) - Log     - Setting up to launch the application as a debugger to inject.
+RDOC 018116: [21:52:35]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell am start -S -D -n com.netease.blqx.mi/com.netease.blqx.Launcher '
+RDOC 018116: [21:52:36]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell ps -A | grep com.netease.blqx.mi'
+RDOC 018116: [21:52:36]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 forward tcp:38969 localabstract:renderdoc_39920'
+RDOC 018116: [21:52:36]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 forward tcp:38960 localabstract:renderdoc_38920'
+RDOC 018116: [21:52:37]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 forward tcp:39501 jdwp:28708'
+RDOC 018116: [21:52:37]    android_tools.cpp( 328) - Log     - COMMAND: E:\eclipse\eclipse\eclipse\sdk\platform-tools\adb.exe '-s 17d6ca25 shell pm path org.renderdoc.renderdoccmd.arm32'
+RDOC 018116: [21:52:38]             jdwp.cpp( 160) - Log     - Injecting RenderDoc from library in /data/app/org.renderdoc.renderdoccmd.arm32-8szh7J88wMpqTD3SGwRr8g==/lib/arm
+RDOC 018116: [21:52:38]             jdwp.cpp( 209) - Log     - Got android.app.ApplicationLoaders.getClassLoader signature (Ljava/lang/String;IZLjava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/ClassLoader;
+ADRD 028708: [05:52:44]    posix_network.cpp( 416) - Log     - Created and bind socket: 55
+ADRD 028708: [05:52:44]             core.cpp( 378) - Log     - Listening for target control on 38920
+ADRD 028708: [05:52:44]             core.cpp( 421) - Log     - RenderDoc v1.8 Android 32-bit Release (ba04b8403a3f4e0470259375acb22be5e5442f23) capturing application
+ADRD 028708: [05:52:44]         settings.cpp( 459) - Log     - Loading config from /sdcard/Android/data/com.netease.blqx.mi/files/renderdoc.conf
+ADRD 028708: [05:52:44]   posix_libentry.cpp(  56) - Log     - Using delay for debugger 0
+ADRD 028708: [05:52:44]   posix_libentry.cpp(  69) - Log     - Loading into com.netease.blqx.mi
+ADRD 028708: [05:52:44]         gl_hooks.cpp( 257) - Log     - Registering OpenGL hooks
+ADRD 028708: [05:52:44]        egl_hooks.cpp( 983) - Log     - Registering EGL hooks
+ADRD 028708: [05:52:44]         vk_layer.cpp(  99) - Log     - Registering Vulkan hooks
+ADRD 028708: [05:52:44]     android_hook.cpp( 742) - Log     - Dummy-loaded /data/app/org.renderdoc.renderdoccmd.arm32-8szh7J88wMpqTD3SGwRr8g==/lib/arm/libVkLayer_GLES_RenderDoc.so with dlopen to prevent library unload
+ADRD 028708: [05:52:44]     android_hook.cpp( 563) - Log     - Applying hooks with interceptor-lib
+ADRD 028708: [05:52:44]     android_hook.cpp( 544) - Warning - Couldn't find __loader_dlopen, falling back to slow path for dlopen hooking
+ADRD 028708: [05:52:44]     android_hook.cpp( 817) - Log     - Refreshing android hooks...
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-QPerformance.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-UxPerformance.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-core-oj.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-core-libart.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-conscrypt.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-okhttp.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-bouncycastle.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-apache-xml.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-ext.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-framework.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-telephony-common.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-voip-common.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-ims-common.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-android.hidl.base-V1.0-java.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-android.hidl.manager-V1.0-java.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-framework-oahl-backward-compatibility.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-android.test.base.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-tcmiface.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-telephony-ext.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-WfdCommon.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-oem-services.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-miui.oat
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/arm/boot-miuisystem.oat
+RDOC 018116: [21:52:45]   target_control.cpp( 585) - Log     - Got remote handshake: com.netease.blqx.mi [28708]
+RDOC 018116: [21:52:45]   target_control.cpp( 585) - Log     - Got remote handshake: com.netease.blqx.mi [28708]
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /system/framework/oat/arm/org.apache.http.legacy.boot.odex
+ADRD 028708: [05:52:45]     android_hook.cpp( 287) - Warning - Missing required section to hook /data/app/com.netease.blqx.mi-oHFrSZCG28RBemeNyEP9Hg==/oat/arm/base.odex
+ADRD 028708: [05:52:45]     android_hook.cpp( 819) - Log     - Refreshed
+ADRD 028708: [05:52:45]     android_hook.cpp( 773) - Log     - Fetching 2 original function pointers over 0 libraries
+ADRD 028708: [05:52:45]     android_hook.cpp( 789) - Log     - Finished
+ADRD 028708: [05:52:45]     android_hook.cpp( 806) - Log     - Called library callbacks - hook registration complete
+RDOC 018116: [21:52:46]   target_control.cpp( 831) - Log     - Used API: OpenGLES (Not presenting & supported)
+RDOC 018116: [21:52:46]   target_control.cpp( 831) - Log     - Used API: OpenGLES (Presenting & supported)
+ADRD 028708: [05:52:46]     android_hook.cpp( 817) - Log     - Refreshing android hooks...
+ADRD 028708: [05:52:46]     android_hook.cpp( 819) - Log     - Refreshed
+ADRD 028708: [05:52:46]        gl_driver.cpp(1135) - Log     - Core context CC77EFC0 created with attribs, sharing with context 00000000
+ADRD 028708: [05:52:46]     android_hook.cpp( 817) - Log     - Refreshing android hooks...
+ADRD 028708: [05:52:46]     android_hook.cpp( 819) - Log     - Refreshed
+ADRD 028708: [05:52:46]             core.cpp(1707) - Log     - Adding OpenGLES device frame capturer for 0xCC77EFC0
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 451) - Log     - 18446744072816163184: eglMakeCurrent(00000001, CA6E6100, CA6E6100, CC77EFC0)
+ADRD 028708: [05:52:46]        gl_common.cpp( 422) - Log     - Checking enabled extensions, running as OpenGL ES 3.2
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3061) - Log     - Emulating glTransformFeedbackBufferBase
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3062) - Log     - Emulating glTransformFeedbackBufferRange
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3063) - Log     - Emulating glClearNamedFramebufferiv
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3064) - Log     - Emulating glClearNamedFramebufferuiv
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3065) - Log     - Emulating glClearNamedFramebufferfv
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3066) - Log     - Emulating glClearNamedFramebufferfi
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3067) - Log     - Emulating glBlitNamedFramebuffer
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3068) - Log     - Emulating glVertexArrayElementBuffer
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3069) - Log     - Emulating glVertexArrayVertexBuffers
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3116) - Log     - Emulating ARB_clear_buffer_object
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3131) - Log     - Emulating ARB_internalformat_query2
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3272) - Log     - Emulating GLES 3.x functions
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3317) - Log     - Emulating EXT_direct_state_access
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3404) - Log     - Emulating ARB_direct_state_access
+ADRD 028708: [05:52:46]        gl_driver.cpp(1283) - Log     - 18446744072816163184: ActivateContext(CC77EFC0, A91C1FEF)
+ADRD 028708: [05:52:46]        gl_driver.cpp(1122) - Log     - 18446744072816163184: Created ResourceId::4 for ctx CC77EFC0
+ADRD 028708: [05:52:46]        gl_driver.cpp(1379) - Log     - Activating new GL context: Qualcomm / Adreno (TM) 512 / OpenGL ES 3.2 V@331.0 (GIT@ce8a911, I385ac5a262) (Date:03/28/19)
+ADRD 028708: [05:52:46]        gl_common.cpp( 479) - Log     - Vendor checks for 32 (Qualcomm / Adreno (TM) 512 / OpenGL ES 3.2 V@331.0 (GIT@ce8a911, I385ac5a262) (Date:03/28/19))
+ADRD 028708: [05:52:46]        gl_common.cpp( 804) - Warning - Reading from the depth buffer using glReadPixels is not supported (GL_NV_read_depth)
+ADRD 028708: [05:52:46]        gl_common.cpp( 808) - Warning - Reading from the stencil buffer using glReadPixels is not supported (GL_NV_read_stencil)
+ADRD 028708: [05:52:46]        gl_common.cpp( 812) - Warning - Reading from the packed depth-stencil buffers using glReadPixels is not supported (GL_NV_read_depth_stencil)
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072816163184: RefreshWindowParameters(CC77EFC0, CA6E6100) => 1 x 1
+ADRD 028708: [05:52:46]        gl_driver.cpp(1135) - Log     - Core context CB2BE7C0 created with attribs, sharing with context 00000000
+ADRD 028708: [05:52:46]             core.cpp(1707) - Log     - Adding OpenGLES device frame capturer for 0xCB2BE7C0
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 451) - Log     - 18446744072821905776: eglMakeCurrent(00000001, CA176460, CA176460, CB2BE7C0)
+ADRD 028708: [05:52:46]        gl_common.cpp( 422) - Log     - Checking enabled extensions, running as OpenGL ES 3.2
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3116) - Log     - Emulating ARB_clear_buffer_object
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3131) - Log     - Emulating ARB_internalformat_query2
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3272) - Log     - Emulating GLES 3.x functions
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3317) - Log     - Emulating EXT_direct_state_access
+ADRD 028708: [05:52:46]      gl_emulated.cpp(3404) - Log     - Emulating ARB_direct_state_access
+ADRD 028708: [05:52:46]        gl_driver.cpp(1283) - Log     - 18446744072821905776: ActivateContext(CB2BE7C0, CA6E7008)
+ADRD 028708: [05:52:46]        gl_driver.cpp(1122) - Log     - 18446744072821905776: Created ResourceId::27 for ctx CB2BE7C0
+ADRD 028708: [05:52:46]        gl_driver.cpp(1379) - Log     - Activating new GL context: Qualcomm / Adreno (TM) 512 / OpenGL ES 3.2 V@331.0 (GIT@ce8a911, I385ac5a262) (Date:03/28/19)
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 331) - Log     - 18446744072821905776 @ CB2BE7C0: glCreateShader(GL_VERTEX_SHADER) 1 => ResourceId::47
+ADRD 028913: [21:52:46]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 331) - Log     - 18446744072821905776 @ CB2BE7C0: glCreateShader(GL_FRAGMENT_SHADER) 2 => ResourceId::48
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 808) - Log     - 18446744072821905776 @ CB2BE7C0: glCreateProgram() 3 => ResourceId::49 record C9E04360
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 561) - Log     - 18446744072821905776 @ CB2BE7C0: glAttachShader(3 => ResourceId::49, 1 => ResourceId::47)
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 561) - Log     - 18446744072821905776 @ CB2BE7C0: glAttachShader(3 => ResourceId::49, 2 => ResourceId::48)
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 891) - Log     - 18446744072821905776 @ CB2BE7C0: glLinkProgram(3 => ResourceId::49) record C9E04360
+ADRD 028918: [21:52:46]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 451) - Log     - 18446744072816163184: eglMakeCurrent(00000001, CB657080, CB657080, CC77EFC0)
+ADRD 028708: [05:52:46]        gl_driver.cpp(1283) - Log     - 18446744072816163184: ActivateContext(CC77EFC0, E427F008)
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072816163184: RefreshWindowParameters(CC77EFC0, CB657080) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]             core.cpp(1740) - Log     - Adding OpenGLES frame capturer for 0xCB2BE7C0 / 0xCA6E7008
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 808) - Log     - 18446744072816163184 @ CC77EFC0: glCreateProgram() 1 => ResourceId::53 record C9E06200
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 331) - Log     - 18446744072816163184 @ CC77EFC0: glCreateShader(GL_FRAGMENT_SHADER) 2 => ResourceId::54
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 561) - Log     - 18446744072816163184 @ CC77EFC0: glAttachShader(1 => ResourceId::53, 2 => ResourceId::54)
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 331) - Log     - 18446744072816163184 @ CC77EFC0: glCreateShader(GL_VERTEX_SHADER) 3 => ResourceId::55
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 561) - Log     - 18446744072816163184 @ CC77EFC0: glAttachShader(1 => ResourceId::53, 3 => ResourceId::55)
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 891) - Log     - 18446744072816163184 @ CC77EFC0: glLinkProgram(1 => ResourceId::53) record C9E06200
+ADRD 028708: [05:52:46]     gl_get_funcs.cpp( 886) - Log     - 18446744072816163184 @ CC77EFC0: glGetProgramiv(1 => ResourceId::53)
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 513) - Log     - 18446744072816163184 @ CC77EFC0: glDeleteShader(2, ResourceId::54)
+ADRD 028708: [05:52:46]  gl_shader_funcs.cpp( 513) - Log     - 18446744072816163184 @ CC77EFC0: glDeleteShader(3, ResourceId::55)
+ADRD 028708: [05:52:46]             core.cpp(1740) - Log     - Adding OpenGLES frame capturer for 0xCC77EFC0 / 0xE427F008
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:46]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028838: [21:52:47]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028838: [21:52:47]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 028838: [21:52:47]                 libc(   0) - Error   - Access denied finding property "net.dns3"
+ADRD 028838: [21:52:47]                 libc(   0) - Error   - Access denied finding property "net.dns4"
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028838: [21:52:47]                 libc(   0) - Error   - Access denied finding property "ro.serialno"
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]     android_hook.cpp( 817) - Log     - Refreshing android hooks...
+ADRD 028708: [05:52:47]     android_hook.cpp( 819) - Log     - Refreshed
+ADRD 028708: [05:52:47]        gl_driver.cpp(1135) - Log     - Core context C4386000 created with attribs, sharing with context 00000000
+ADRD 028708: [05:52:47]             core.cpp(1707) - Log     - Adding OpenGLES device frame capturer for 0xC4386000
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 451) - Log     - 18446744073460135060: eglMakeCurrent(00000001, C421D6C0, C421D6C0, C4386000)
+ADRD 028708: [05:52:47]        gl_common.cpp( 422) - Log     - Checking enabled extensions, running as OpenGL ES 1.1
+ADRD 028708: [05:52:47]      gl_emulated.cpp(3116) - Log     - Emulating ARB_clear_buffer_object
+ADRD 028708: [05:52:47]      gl_emulated.cpp(3131) - Log     - Emulating ARB_internalformat_query2
+ADRD 028708: [05:52:47]      gl_emulated.cpp(3272) - Log     - Emulating GLES 3.x functions
+ADRD 028708: [05:52:47]      gl_emulated.cpp(3317) - Log     - Emulating EXT_direct_state_access
+ADRD 028708: [05:52:47]      gl_emulated.cpp(3404) - Log     - Emulating ARB_direct_state_access
+ADRD 028708: [05:52:47]        gl_driver.cpp(1283) - Log     - 18446744073460135060: ActivateContext(C4386000, A2CF95AF)
+ADRD 028708: [05:52:47]        gl_driver.cpp(1122) - Log     - 18446744073460135060: Created ResourceId::56 for ctx C4386000
+ADRD 028708: [05:52:47]        gl_driver.cpp(1379) - Log     - Activating new GL context: Qualcomm / Adreno (TM) 512 / OpenGL ES-CM 1.1
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744073460135060: RefreshWindowParameters(C4386000, C421D6C0) => 100 x 100
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028838: [21:52:48]                 libc(   0) - Error   - Access denied finding property "ro.boot.serialno"
+ADRD 028838: [21:52:48]                 libc(   0) - Error   - Access denied finding property "ro.serialno"
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:47]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 451) - Log     - 18446744072816163184: eglMakeCurrent(00000001, CA6E6100, CA6E6100, CC77EFC0)
+ADRD 028708: [05:52:48]        gl_driver.cpp(1283) - Log     - 18446744072816163184: ActivateContext(CC77EFC0, A91C1FEF)
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072816163184: RefreshWindowParameters(CC77EFC0, CA6E6100) => 1 x 1
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072821905776: RefreshWindowParameters(CB2BE7C0, CA176460) => 2160 x 1080
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 451) - Log     - 18446744072821905776: eglMakeCurrent(00000001, 00000000, 00000000, 00000000)
+ADRD 028708: [05:52:48]        gl_driver.cpp(1283) - Log     - 18446744072821905776: ActivateContext(00000000, DEADBEEF)
+ADRD 028708: [05:52:48]             core.cpp(1723) - Log     - Removing device frame capturer for 0xCB2BE7C0
+ADRD 028708: [05:52:48]             core.cpp(1769) - Log     - Removing frame capturer for 0xCB2BE7C0 / 0xCA6E7008
+ADRD 028708: [05:52:48]     android_hook.cpp( 817) - Log     - Refreshing android hooks...
+ADRD 028708: [05:52:48]     android_hook.cpp( 819) - Log     - Refreshed
+ADRD 028708: [05:52:48]        gl_driver.cpp(1135) - Log     - Core context CB37F600 created with attribs, sharing with context 00000000
+ADRD 028708: [05:52:48]             core.cpp(1707) - Log     - Adding OpenGLES device frame capturer for 0xCB37F600
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 451) - Log     - 18446744072711805296: eglMakeCurrent(00000001, C3B6A680, C3B6A680, CB37F600)
+ADRD 028708: [05:52:48]        gl_common.cpp( 422) - Log     - Checking enabled extensions, running as OpenGL ES 3.2
+ADRD 028708: [05:52:48]      gl_emulated.cpp(3116) - Log     - Emulating ARB_clear_buffer_object
+ADRD 028708: [05:52:48]      gl_emulated.cpp(3131) - Log     - Emulating ARB_internalformat_query2
+ADRD 028708: [05:52:48]      gl_emulated.cpp(3272) - Log     - Emulating GLES 3.x functions
+ADRD 028708: [05:52:48]      gl_emulated.cpp(3317) - Log     - Emulating EXT_direct_state_access
+ADRD 028708: [05:52:48]      gl_emulated.cpp(3404) - Log     - Emulating ARB_direct_state_access
+ADRD 028708: [05:52:48]        gl_driver.cpp(1283) - Log     - 18446744072711805296: ActivateContext(CB37F600, C8568008)
+ADRD 028708: [05:52:48]        gl_driver.cpp(1122) - Log     - 18446744072711805296: Created ResourceId::76 for ctx CB37F600
+ADRD 028708: [05:52:48]        gl_driver.cpp(1379) - Log     - Activating new GL context: Qualcomm / Adreno (TM) 512 / OpenGL ES 3.2 V@331.0 (GIT@ce8a911, I385ac5a262) (Date:03/28/19)
+ADRD 028708: [05:52:48]        egl_hooks.cpp( 110) - Log     - 18446744072711805296: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CB37F600: glCreateShader(GL_VERTEX_SHADER) 1 => ResourceId::96
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CB37F600: glCreateShader(GL_FRAGMENT_SHADER) 2 => ResourceId::97
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CB37F600: glCreateProgram() 3 => ResourceId::98 record C3D32600
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CB37F600: glAttachShader(3 => ResourceId::98, 1 => ResourceId::96)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CB37F600: glAttachShader(3 => ResourceId::98, 2 => ResourceId::97)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CB37F600: glLinkProgram(3 => ResourceId::98) record C3D32600
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CB37F600: glDeleteProgram(3, ResourceId::98)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 513) - Log     - 18446744072711805296 @ CB37F600: glDeleteShader(1, ResourceId::96)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 513) - Log     - 18446744072711805296 @ CB37F600: glDeleteShader(2, ResourceId::97)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CB37F600: glCreateShader(GL_VERTEX_SHADER) 1 => ResourceId::99
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CB37F600: glCreateShader(GL_FRAGMENT_SHADER) 2 => ResourceId::100
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CB37F600: glCreateProgram() 3 => ResourceId::101 record C3D326A0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CB37F600: glAttachShader(3 => ResourceId::101, 1 => ResourceId::99)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CB37F600: glAttachShader(3 => ResourceId::101, 2 => ResourceId::100)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CB37F600: glLinkProgram(3 => ResourceId::101) record C3D326A0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CB37F600: glGetProgramiv(3 => ResourceId::101)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CB37F600: glDeleteProgram(3, ResourceId::101)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 513) - Log     - 18446744072711805296 @ CB37F600: glDeleteShader(1, ResourceId::99)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 513) - Log     - 18446744072711805296 @ CB37F600: glDeleteShader(2, ResourceId::100)
+RDOC 018116: [21:52:48]    android_utils.cpp( 678) - Warning - Couldn't find last line. Potentially missed logcat messages.
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(93 => ResourceId::282)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(93 => ResourceId::282)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(93, ResourceId::282)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 93 => ResourceId::283 record BF622180
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(93 => ResourceId::283)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(93 => ResourceId::283)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(93 => ResourceId::283)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(93, ResourceId::283)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 93 => ResourceId::284
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 94 => ResourceId::285
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 95 => ResourceId::286 record BF6225E0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(95 => ResourceId::286, 93 => ResourceId::284)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(95 => ResourceId::286, 94 => ResourceId::285)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(95 => ResourceId::286) record BF6225E0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(95 => ResourceId::286)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 96 => ResourceId::287 record BF6234E0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(96 => ResourceId::287)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(96 => ResourceId::287)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(96 => ResourceId::287)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(96, ResourceId::287)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 96 => ResourceId::288 record BF6233A0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(96 => ResourceId::288)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(96 => ResourceId::288)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(96 => ResourceId::288)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(96, ResourceId::288)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 96 => ResourceId::289
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 97 => ResourceId::290
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 98 => ResourceId::291 record BF6238A0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(98 => ResourceId::291, 96 => ResourceId::289)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(98 => ResourceId::291, 97 => ResourceId::290)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(98 => ResourceId::291) record BF6238A0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(98 => ResourceId::291)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 99 => ResourceId::292 record BF6247A0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(99 => ResourceId::292)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(99 => ResourceId::292)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(99 => ResourceId::292)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(99, ResourceId::292)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 99 => ResourceId::293 record BF624660
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(99 => ResourceId::293)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(99 => ResourceId::293)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(99 => ResourceId::293)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(99, ResourceId::293)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 99 => ResourceId::294
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 100 => ResourceId::295
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 101 => ResourceId::296 record BF624B60
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(101 => ResourceId::296, 99 => ResourceId::294)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(101 => ResourceId::296, 100 => ResourceId::295)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(101 => ResourceId::296) record BF624B60
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(101 => ResourceId::296)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 102 => ResourceId::297 record BF6259C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(102 => ResourceId::297)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(102 => ResourceId::297)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(102 => ResourceId::297)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(102, ResourceId::297)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 102 => ResourceId::298 record BF625880
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(102 => ResourceId::298)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(102 => ResourceId::298)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(102 => ResourceId::298)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(102, ResourceId::298)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 102 => ResourceId::299
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 103 => ResourceId::300
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 104 => ResourceId::301 record BF625D80
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(104 => ResourceId::301, 102 => ResourceId::299)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(104 => ResourceId::301, 103 => ResourceId::300)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(104 => ResourceId::301) record BF625D80
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(104 => ResourceId::301)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 105 => ResourceId::302 record BF675BE0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(105 => ResourceId::302)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(105 => ResourceId::302)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(105 => ResourceId::302)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(105, ResourceId::302)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 105 => ResourceId::303 record BF675AA0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(105 => ResourceId::303)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(105 => ResourceId::303)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(105 => ResourceId::303)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(105, ResourceId::303)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 105 => ResourceId::304
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 106 => ResourceId::305
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 107 => ResourceId::306 record BF675FA0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(107 => ResourceId::306, 105 => ResourceId::304)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(107 => ResourceId::306, 106 => ResourceId::305)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(107 => ResourceId::306) record BF675FA0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(107 => ResourceId::306)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 108 => ResourceId::307 record BF676F40
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(108 => ResourceId::307)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(108 => ResourceId::307)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(108 => ResourceId::307)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(108, ResourceId::307)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 108 => ResourceId::308 record BF676EA0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(108 => ResourceId::308)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(108 => ResourceId::308)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(108 => ResourceId::308)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(108, ResourceId::308)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 108 => ResourceId::309
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 109 => ResourceId::310
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 110 => ResourceId::311 record BF677300
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(110 => ResourceId::311, 108 => ResourceId::309)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(110 => ResourceId::311, 109 => ResourceId::310)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(110 => ResourceId::311) record BF677300
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(110 => ResourceId::311)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 111 => ResourceId::312 record BF678160
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(111 => ResourceId::312)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(111 => ResourceId::312)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(111 => ResourceId::312)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(111, ResourceId::312)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 111 => ResourceId::313 record BF678020
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(111 => ResourceId::313)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(111 => ResourceId::313)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(111 => ResourceId::313)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(111, ResourceId::313)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 111 => ResourceId::314
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 112 => ResourceId::315
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 113 => ResourceId::316 record BF678520
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(113 => ResourceId::316, 111 => ResourceId::314)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(113 => ResourceId::316, 112 => ResourceId::315)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(113 => ResourceId::316) record BF678520
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(113 => ResourceId::316)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 114 => ResourceId::317 record BF6794C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(114 => ResourceId::317)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(114 => ResourceId::317)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(114 => ResourceId::317)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(114, ResourceId::317)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 114 => ResourceId::318 record BF679420
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(114 => ResourceId::318)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(114 => ResourceId::318)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(114 => ResourceId::318)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(114, ResourceId::318)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 114 => ResourceId::319
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 115 => ResourceId::320
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 116 => ResourceId::321 record BF679880
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(116 => ResourceId::321, 114 => ResourceId::319)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(116 => ResourceId::321, 115 => ResourceId::320)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(116 => ResourceId::321) record BF679880
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(116 => ResourceId::321)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 117 => ResourceId::325 record BF5C6960
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(117 => ResourceId::325)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(117 => ResourceId::325)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(117 => ResourceId::325)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(117, ResourceId::325)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 117 => ResourceId::326 record BF5C68C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(117 => ResourceId::326)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(117 => ResourceId::326)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(117 => ResourceId::326)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(117, ResourceId::326)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 117 => ResourceId::327
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 118 => ResourceId::328
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 119 => ResourceId::329 record BF5C6D20
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(119 => ResourceId::329, 117 => ResourceId::327)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(119 => ResourceId::329, 118 => ResourceId::328)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(119 => ResourceId::329) record BF5C6D20
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(119 => ResourceId::329)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 120 => ResourceId::331
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 121 => ResourceId::332
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 122 => ResourceId::333 record BF5C8120
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(122 => ResourceId::333, 120 => ResourceId::331)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(122 => ResourceId::333, 121 => ResourceId::332)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(122 => ResourceId::333) record BF5C8120
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(122 => ResourceId::333)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(122 => ResourceId::333)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(122 => ResourceId::333)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(122 => ResourceId::333)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(122 => ResourceId::333)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(122 => ResourceId::333)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(122 => ResourceId::333)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 123 => ResourceId::334
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 124 => ResourceId::335
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 125 => ResourceId::336 record BF5C8C60
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(125 => ResourceId::336, 123 => ResourceId::334)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(125 => ResourceId::336, 124 => ResourceId::335)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(125 => ResourceId::336) record BF5C8C60
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(125 => ResourceId::336)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(125 => ResourceId::336)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(125 => ResourceId::336)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(125 => ResourceId::336)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(125 => ResourceId::336)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(125 => ResourceId::336)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(125 => ResourceId::336)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 126 => ResourceId::337
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 127 => ResourceId::338
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 128 => ResourceId::339 record BF5C97A0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(128 => ResourceId::339, 126 => ResourceId::337)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(128 => ResourceId::339, 127 => ResourceId::338)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(128 => ResourceId::339) record BF5C97A0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(128 => ResourceId::339)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(128 => ResourceId::339)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(128 => ResourceId::339)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(128 => ResourceId::339)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(128 => ResourceId::339)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(128 => ResourceId::339)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(128 => ResourceId::339)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 129 => ResourceId::340
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 130 => ResourceId::341
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 131 => ResourceId::342 record BF5CA2E0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(131 => ResourceId::342, 129 => ResourceId::340)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(131 => ResourceId::342, 130 => ResourceId::341)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(131 => ResourceId::342) record BF5CA2E0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(131 => ResourceId::342)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(131 => ResourceId::342)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(131 => ResourceId::342)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(131 => ResourceId::342)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(131 => ResourceId::342)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(131 => ResourceId::342)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(131 => ResourceId::342)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 132 => ResourceId::343
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 133 => ResourceId::344
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 134 => ResourceId::345 record BF5CAE20
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(134 => ResourceId::345, 132 => ResourceId::343)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(134 => ResourceId::345, 133 => ResourceId::344)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(134 => ResourceId::345) record BF5CAE20
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(134 => ResourceId::345)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(134 => ResourceId::345)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(134 => ResourceId::345)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(134 => ResourceId::345)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(134 => ResourceId::345)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(134 => ResourceId::345)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(134 => ResourceId::345)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 135 => ResourceId::346
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 136 => ResourceId::347
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 137 => ResourceId::348 record BF488AA0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(137 => ResourceId::348, 135 => ResourceId::346)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(137 => ResourceId::348, 136 => ResourceId::347)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(137 => ResourceId::348) record BF488AA0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(137 => ResourceId::348)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(137 => ResourceId::348)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(137 => ResourceId::348)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(137 => ResourceId::348)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(137 => ResourceId::348)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(137 => ResourceId::348)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(137 => ResourceId::348)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 138 => ResourceId::349
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 139 => ResourceId::350
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 140 => ResourceId::351 record BF4895E0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(140 => ResourceId::351, 138 => ResourceId::349)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(140 => ResourceId::351, 139 => ResourceId::350)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(140 => ResourceId::351) record BF4895E0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(140 => ResourceId::351)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(140 => ResourceId::351)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(140 => ResourceId::351)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(140 => ResourceId::351)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(140 => ResourceId::351)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(140 => ResourceId::351)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(140 => ResourceId::351)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 141 => ResourceId::352
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 142 => ResourceId::353
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 143 => ResourceId::354 record BF48A1C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(143 => ResourceId::354, 141 => ResourceId::352)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(143 => ResourceId::354, 142 => ResourceId::353)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(143 => ResourceId::354) record BF48A1C0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(143 => ResourceId::354)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(143 => ResourceId::354)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(143 => ResourceId::354)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(143 => ResourceId::354)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(143 => ResourceId::354)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(143 => ResourceId::354)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(143 => ResourceId::354)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 144 => ResourceId::355
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 145 => ResourceId::356
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 146 => ResourceId::357 record BF48ADA0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(146 => ResourceId::357, 144 => ResourceId::355)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(146 => ResourceId::357, 145 => ResourceId::356)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(146 => ResourceId::357) record BF48ADA0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(146 => ResourceId::357)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(146 => ResourceId::357)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(146 => ResourceId::357)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(146 => ResourceId::357)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(146 => ResourceId::357)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(146 => ResourceId::357)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(146 => ResourceId::357)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 147 => ResourceId::358
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 148 => ResourceId::359
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 149 => ResourceId::360 record BF48B980
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(149 => ResourceId::360, 147 => ResourceId::358)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(149 => ResourceId::360, 148 => ResourceId::359)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(149 => ResourceId::360) record BF48B980
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(149 => ResourceId::360)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(149 => ResourceId::360)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(149 => ResourceId::360)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(149 => ResourceId::360)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(149 => ResourceId::360)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(149 => ResourceId::360)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(149 => ResourceId::360)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 150 => ResourceId::361
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 151 => ResourceId::362
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 152 => ResourceId::363 record BF48C4C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(152 => ResourceId::363, 150 => ResourceId::361)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(152 => ResourceId::363, 151 => ResourceId::362)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(152 => ResourceId::363) record BF48C4C0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(152 => ResourceId::363)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(152 => ResourceId::363)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(152 => ResourceId::363)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(152 => ResourceId::363)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(152 => ResourceId::363)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(152 => ResourceId::363)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(152 => ResourceId::363)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 153 => ResourceId::364
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 154 => ResourceId::365
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 155 => ResourceId::366 record BF2D7000
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(155 => ResourceId::366, 153 => ResourceId::364)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(155 => ResourceId::366, 154 => ResourceId::365)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(155 => ResourceId::366) record BF2D7000
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(155 => ResourceId::366)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(155 => ResourceId::366)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(155 => ResourceId::366)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(155 => ResourceId::366)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(155 => ResourceId::366)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(155 => ResourceId::366)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(155 => ResourceId::366)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 156 => ResourceId::367
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 157 => ResourceId::368
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 158 => ResourceId::369 record BF2D7B40
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(158 => ResourceId::369, 156 => ResourceId::367)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(158 => ResourceId::369, 157 => ResourceId::368)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(158 => ResourceId::369) record BF2D7B40
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(158 => ResourceId::369)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(158 => ResourceId::369)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(158 => ResourceId::369)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(158 => ResourceId::369)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(158 => ResourceId::369)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(158 => ResourceId::369)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(158 => ResourceId::369)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 159 => ResourceId::370
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 160 => ResourceId::371
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 161 => ResourceId::372 record BF2D8720
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(161 => ResourceId::372, 159 => ResourceId::370)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(161 => ResourceId::372, 160 => ResourceId::371)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(161 => ResourceId::372) record BF2D8720
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(161 => ResourceId::372)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(161 => ResourceId::372)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(161 => ResourceId::372)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(161 => ResourceId::372)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(161 => ResourceId::372)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(161 => ResourceId::372)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(161 => ResourceId::372)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 162 => ResourceId::373
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 163 => ResourceId::374
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 164 => ResourceId::375 record BF2D9300
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(164 => ResourceId::375, 162 => ResourceId::373)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(164 => ResourceId::375, 163 => ResourceId::374)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(164 => ResourceId::375) record BF2D9300
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(164 => ResourceId::375)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(164 => ResourceId::375)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(164 => ResourceId::375)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(164 => ResourceId::375)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(164 => ResourceId::375)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(164 => ResourceId::375)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(164 => ResourceId::375)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 165 => ResourceId::376
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 166 => ResourceId::377
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 167 => ResourceId::378 record BF2D9E40
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(167 => ResourceId::378, 165 => ResourceId::376)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(167 => ResourceId::378, 166 => ResourceId::377)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(167 => ResourceId::378) record BF2D9E40
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(167 => ResourceId::378)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(167 => ResourceId::378)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(167 => ResourceId::378)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(167 => ResourceId::378)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(167 => ResourceId::378)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(167 => ResourceId::378)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(167 => ResourceId::378)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 168 => ResourceId::379
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 169 => ResourceId::380
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 170 => ResourceId::381 record BF2DAA20
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(170 => ResourceId::381, 168 => ResourceId::379)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(170 => ResourceId::381, 169 => ResourceId::380)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(170 => ResourceId::381) record BF2DAA20
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(170 => ResourceId::381)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(170 => ResourceId::381)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(170 => ResourceId::381)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(170 => ResourceId::381)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(170 => ResourceId::381)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(170 => ResourceId::381)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(170 => ResourceId::381)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 171 => ResourceId::382
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 172 => ResourceId::383
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 173 => ResourceId::384 record BF2DB560
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(173 => ResourceId::384, 171 => ResourceId::382)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(173 => ResourceId::384, 172 => ResourceId::383)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(173 => ResourceId::384) record BF2DB560
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(173 => ResourceId::384)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(173 => ResourceId::384)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(173 => ResourceId::384)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(173 => ResourceId::384)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(173 => ResourceId::384)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(173 => ResourceId::384)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(173 => ResourceId::384)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 174 => ResourceId::385
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 175 => ResourceId::386
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 176 => ResourceId::387 record BF2ED140
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(176 => ResourceId::387, 174 => ResourceId::385)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(176 => ResourceId::387, 175 => ResourceId::386)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(176 => ResourceId::387) record BF2ED140
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(176 => ResourceId::387)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(176 => ResourceId::387)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(176 => ResourceId::387)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(176 => ResourceId::387)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(176 => ResourceId::387)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(176 => ResourceId::387)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(176 => ResourceId::387)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 177 => ResourceId::388
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 178 => ResourceId::389
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 179 => ResourceId::390 record BF2EDC80
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(179 => ResourceId::390, 177 => ResourceId::388)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(179 => ResourceId::390, 178 => ResourceId::389)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(179 => ResourceId::390) record BF2EDC80
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(179 => ResourceId::390)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(179 => ResourceId::390)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(179 => ResourceId::390)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(179 => ResourceId::390)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(179 => ResourceId::390)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(179 => ResourceId::390)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(179 => ResourceId::390)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 180 => ResourceId::391
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 181 => ResourceId::392
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 182 => ResourceId::393 record BF2EE7C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(182 => ResourceId::393, 180 => ResourceId::391)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(182 => ResourceId::393, 181 => ResourceId::392)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(182 => ResourceId::393) record BF2EE7C0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(182 => ResourceId::393)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(182 => ResourceId::393)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(182 => ResourceId::393)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(182 => ResourceId::393)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(182 => ResourceId::393)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(182 => ResourceId::393)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(182 => ResourceId::393)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 183 => ResourceId::394
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 184 => ResourceId::395
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 185 => ResourceId::396 record BF2EF300
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(185 => ResourceId::396, 183 => ResourceId::394)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(185 => ResourceId::396, 184 => ResourceId::395)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(185 => ResourceId::396) record BF2EF300
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(185 => ResourceId::396)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(185 => ResourceId::396)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(185 => ResourceId::396)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(185 => ResourceId::396)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(185 => ResourceId::396)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(185 => ResourceId::396)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(185 => ResourceId::396)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 186 => ResourceId::397
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 187 => ResourceId::398
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 188 => ResourceId::399 record BF2EFE40
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(188 => ResourceId::399, 186 => ResourceId::397)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(188 => ResourceId::399, 187 => ResourceId::398)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(188 => ResourceId::399) record BF2EFE40
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(188 => ResourceId::399)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(188 => ResourceId::399)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(188 => ResourceId::399)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(188 => ResourceId::399)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(188 => ResourceId::399)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(188 => ResourceId::399)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(188 => ResourceId::399)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 189 => ResourceId::400
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 190 => ResourceId::401
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 191 => ResourceId::402 record BF2F0980
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(191 => ResourceId::402, 189 => ResourceId::400)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(191 => ResourceId::402, 190 => ResourceId::401)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(191 => ResourceId::402) record BF2F0980
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(191 => ResourceId::402)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(191 => ResourceId::402)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(191 => ResourceId::402)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(191 => ResourceId::402)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(191 => ResourceId::402)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(191 => ResourceId::402)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(191 => ResourceId::402)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 192 => ResourceId::403
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 193 => ResourceId::404
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 194 => ResourceId::405 record BF2F14C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(194 => ResourceId::405, 192 => ResourceId::403)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(194 => ResourceId::405, 193 => ResourceId::404)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(194 => ResourceId::405) record BF2F14C0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(194 => ResourceId::405)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(194 => ResourceId::405)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(194 => ResourceId::405)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(194 => ResourceId::405)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(194 => ResourceId::405)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(194 => ResourceId::405)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(194 => ResourceId::405)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 195 => ResourceId::406
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 196 => ResourceId::407
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 197 => ResourceId::408 record BF2140A0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(197 => ResourceId::408, 195 => ResourceId::406)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(197 => ResourceId::408, 196 => ResourceId::407)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(197 => ResourceId::408) record BF2140A0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(197 => ResourceId::408)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(197 => ResourceId::408)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(197 => ResourceId::408)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(197 => ResourceId::408)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(197 => ResourceId::408)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(197 => ResourceId::408)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(197 => ResourceId::408)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 198 => ResourceId::409
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 199 => ResourceId::410
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 200 => ResourceId::411 record BF214BE0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(200 => ResourceId::411, 198 => ResourceId::409)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(200 => ResourceId::411, 199 => ResourceId::410)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(200 => ResourceId::411) record BF214BE0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(200 => ResourceId::411)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(200 => ResourceId::411)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(200 => ResourceId::411)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(200 => ResourceId::411)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(200 => ResourceId::411)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(200 => ResourceId::411)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(200 => ResourceId::411)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 201 => ResourceId::412
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 202 => ResourceId::413
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 203 => ResourceId::414 record BF215720
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(203 => ResourceId::414, 201 => ResourceId::412)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(203 => ResourceId::414, 202 => ResourceId::413)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(203 => ResourceId::414) record BF215720
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(203 => ResourceId::414)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(203 => ResourceId::414)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(203 => ResourceId::414)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(203 => ResourceId::414)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(203 => ResourceId::414)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(203 => ResourceId::414)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(203 => ResourceId::414)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 204 => ResourceId::415
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 205 => ResourceId::416
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 206 => ResourceId::417 record BF216260
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(206 => ResourceId::417, 204 => ResourceId::415)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(206 => ResourceId::417, 205 => ResourceId::416)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(206 => ResourceId::417) record BF216260
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(206 => ResourceId::417)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(206 => ResourceId::417)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(206 => ResourceId::417)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(206 => ResourceId::417)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(206 => ResourceId::417)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(206 => ResourceId::417)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(206 => ResourceId::417)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 207 => ResourceId::418
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 208 => ResourceId::419
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 209 => ResourceId::420 record BF216DA0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(209 => ResourceId::420, 207 => ResourceId::418)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(209 => ResourceId::420, 208 => ResourceId::419)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(209 => ResourceId::420) record BF216DA0
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(209 => ResourceId::420)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(209 => ResourceId::420)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(209 => ResourceId::420)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(209 => ResourceId::420)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(209 => ResourceId::420)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(209 => ResourceId::420)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(209 => ResourceId::420)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 210 => ResourceId::421
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 211 => ResourceId::422
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 212 => ResourceId::423 record BF217980
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(212 => ResourceId::423, 210 => ResourceId::421)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(212 => ResourceId::423, 211 => ResourceId::422)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(212 => ResourceId::423) record BF217980
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(212 => ResourceId::423)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(212 => ResourceId::423)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(212 => ResourceId::423)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(212 => ResourceId::423)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(212 => ResourceId::423)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(212 => ResourceId::423)
+ADRD 028708: [05:52:48]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(212 => ResourceId::423)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 213 => ResourceId::424
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 214 => ResourceId::425
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 215 => ResourceId::426 record BF2184C0
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(215 => ResourceId::426, 213 => ResourceId::424)
+ADRD 028708: [05:52:48]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(215 => ResourceId::426, 214 => ResourceId::425)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(215 => ResourceId::426) record BF2184C0
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(215 => ResourceId::426)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(215 => ResourceId::426)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(215 => ResourceId::426)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(215 => ResourceId::426)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(215 => ResourceId::426)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(215 => ResourceId::426)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(215 => ResourceId::426)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 216 => ResourceId::427
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 217 => ResourceId::428
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 218 => ResourceId::429 record BF268000
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(218 => ResourceId::429, 216 => ResourceId::427)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(218 => ResourceId::429, 217 => ResourceId::428)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(218 => ResourceId::429) record BF268000
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(218 => ResourceId::429)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(218 => ResourceId::429)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(218 => ResourceId::429)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(218 => ResourceId::429)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(218 => ResourceId::429)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(218 => ResourceId::429)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(218 => ResourceId::429)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 219 => ResourceId::430
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 220 => ResourceId::431
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 221 => ResourceId::432 record BF268B40
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(221 => ResourceId::432, 219 => ResourceId::430)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(221 => ResourceId::432, 220 => ResourceId::431)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(221 => ResourceId::432) record BF268B40
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(221 => ResourceId::432)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(221 => ResourceId::432)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(221 => ResourceId::432)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(221 => ResourceId::432)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(221 => ResourceId::432)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(221 => ResourceId::432)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(221 => ResourceId::432)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 222 => ResourceId::433
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 223 => ResourceId::434
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 224 => ResourceId::435 record BF269720
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(224 => ResourceId::435, 222 => ResourceId::433)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(224 => ResourceId::435, 223 => ResourceId::434)
+ADRD 028708: [05:52:49]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(224 => ResourceId::435) record BF269720
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(224 => ResourceId::435)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(224 => ResourceId::435)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(224 => ResourceId::435)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(224 => ResourceId::435)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(224 => ResourceId::435)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(224 => ResourceId::435)
+ADRD 028708: [05:52:49]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(224 => ResourceId::435)
+ADRD 028838: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 028838: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 028838: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns3"
+ADRD 028838: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns4"
+ADRD 029091: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029091: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 029091: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns3"
+ADRD 029091: [21:52:49]                 libc(   0) - Error   - Access denied finding property "net.dns4"
+ADRD 029091: [21:52:49]                 libc(   0) - Error   - Access denied finding property "ro.serialno"
+ADRD 029267: [21:52:50]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029270: [21:52:50]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029271: [21:52:50]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029300: [21:52:50]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 029326: [21:52:50]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 029328: [21:52:50]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, 00000000, 00000000, 00000000)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(00000000, DEADBEEF)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, C3B6A680, C3B6A680, CB37F600)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(CB37F600, C8568008)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, 00000000, 00000000, 00000000)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(00000000, DEADBEEF)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, C3B6A680, C3B6A680, CB37F600)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(CB37F600, C8568008)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 225 => ResourceId::491 record BE858D40
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(225 => ResourceId::491)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::491)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::491)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(225, ResourceId::491)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 225 => ResourceId::492 record BE858E80
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(225 => ResourceId::492)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::492)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::492)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(225, ResourceId::492)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 225 => ResourceId::493
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 226 => ResourceId::494
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 227 => ResourceId::495 record BF32CCE0
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(227 => ResourceId::495, 225 => ResourceId::493)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(227 => ResourceId::495, 226 => ResourceId::494)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(227 => ResourceId::495) record BF32CCE0
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 029091: [21:52:50]                 libc(   0) - Error   - Access denied finding property "ro.boot.serialno"
+ADRD 029091: [21:52:50]                 libc(   0) - Error   - Access denied finding property "ro.serialno"
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 029091: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029091: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 029091: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns3"
+ADRD 029091: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns4"
+ADRD 029091: [21:52:51]                 libc(   0) - Error   - Access denied finding property "ro.serialno"
+ADRD 029267: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029270: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029271: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029300: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 029326: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 029328: [21:52:51]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, 00000000, 00000000, 00000000)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(00000000, DEADBEEF)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, C3B6A680, C3B6A680, CB37F600)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(CB37F600, C8568008)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, 00000000, 00000000, 00000000)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(00000000, DEADBEEF)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 451) - Log     - 18446744072684566896: eglMakeCurrent(00000001, C3B6A680, C3B6A680, CB37F600)
+ADRD 028708: [05:52:50]        gl_driver.cpp(1283) - Log     - 18446744072684566896: ActivateContext(CB37F600, C8568008)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 225 => ResourceId::491 record BE858D40
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(225 => ResourceId::491)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::491)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::491)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(225, ResourceId::491)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 225 => ResourceId::492 record BE858E80
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1408) - Log     - 18446744072711805296 @ CAE7E380: glProgramBinary(225 => ResourceId::492)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::492)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(225 => ResourceId::492)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp(1282) - Log     - 18446744072711805296 @ CAE7E380: glDeleteProgram(225, ResourceId::492)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_VERTEX_SHADER) 225 => ResourceId::493
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 331) - Log     - 18446744072711805296 @ CAE7E380: glCreateShader(GL_FRAGMENT_SHADER) 226 => ResourceId::494
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 808) - Log     - 18446744072711805296 @ CAE7E380: glCreateProgram() 227 => ResourceId::495 record BF32CCE0
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(227 => ResourceId::495, 225 => ResourceId::493)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 561) - Log     - 18446744072711805296 @ CAE7E380: glAttachShader(227 => ResourceId::495, 226 => ResourceId::494)
+ADRD 028708: [05:52:50]  gl_shader_funcs.cpp( 891) - Log     - 18446744072711805296 @ CAE7E380: glLinkProgram(227 => ResourceId::495) record BF32CCE0
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]     gl_get_funcs.cpp( 886) - Log     - 18446744072711805296 @ CAE7E380: glGetProgramiv(227 => ResourceId::495)
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 029091: [21:52:52]                 libc(   0) - Error   - Access denied finding property "ro.boot.serialno"
+ADRD 029091: [21:52:52]                 libc(   0) - Error   - Access denied finding property "ro.serialno"
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:50]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 028708: [05:52:51]        egl_hooks.cpp( 110) - Log     - 18446744072684566896: RefreshWindowParameters(CB37F600, C3B6A680) => 2160 x 1080
+ADRD 029091: [21:52:52]                 libc(   0) - Error   - Access denied finding property "net.dns1"
+ADRD 029091: [21:52:52]                 libc(   0) - Error   - Access denied finding property "net.dns2"
+ADRD 029091: [21:52:52]                 libc(   0) - Error   - Access denied finding property "net.dns3"
+ADRD 029091: [21:52:52]                 libc(   0) - Error   - Access denied finding property "net.dns4"
+RDOC 018116: [21:52:54]    android_utils.cpp( 678) - Warning - Couldn't find last line. Potentially missed logcat messages.
+QTRD 018116: [21:53:03]              unknown(   0) - Debug   - QWindowsNativeFileDialogBase::onSelectionChange () 0
+QTRD 018116: [21:53:03]              unknown(   0) - Debug   - QWindowsNativeFileDialogBase::onSelectionChange () 0
