@@ -1,0 +1,8 @@
+>	renderdoc.dll!MergeConfigValues(const rdcstr & prefix, SDObject * dstConfig, const SDObject * srcConfig, bool updateDescs) 行 272	C++
+ 	renderdoc.dll!RenderDoc::ProcessConfig() 行 472	C++
+ 	renderdoc.dll!RenderDoc::Initialise() 行 533	C++
+ 	renderdoc.dll!add_hooks() 行 61	C++
+ 	renderdoc.dll!DllMain(HINSTANCE__ * hModule, unsigned long ul_reason_for_call, void * lpReserved) 行 79	C++
+
+
+
