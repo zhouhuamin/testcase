@@ -5,4 +5,17 @@
  	renderdoc.dll!DllMain(HINSTANCE__ * hModule, unsigned long ul_reason_for_call, void * lpReserved) 行 79	C++
 
 
+>	renderdoc.dll!CheckExtFromString(const char * ext) 行 350	C++
+ 	renderdoc.dll!FetchEnabledExtensions() 行 443	C++
+ 	renderdoc.dll!CreateReplayDevice(RDCDriver rdcdriver, RDCFile * rdc, const ReplayOptions & opts, GLPlatform & platform, IReplayDriver * * & driver) 行 3898	C++
+ 	renderdoc.dll!GLES_CreateReplayDevice(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 4016	C++
+ 	renderdoc.dll!RenderDoc::CreateReplayDriver(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 1655	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2110	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
 
