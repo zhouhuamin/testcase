@@ -17,5 +17,14 @@
  	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
 
 
+ 	renderdoc.dll!RenderDoc::FinishCaptureWriting(RDCFile * rdc, unsigned int frameNumber) 行 1714	C++
+>	renderdoc.dll!WrappedVulkan::EndFrameCapture(void * dev, void * wnd) 行 2204	C++
+ 	renderdoc.dll!RenderDoc::EndFrameCapture(void * dev, void * wnd) 行 814	C++
+ 	renderdoc.dll!EndFrameCapture(void * device, void * wndHandle) 行 234	C++
+ 	vkcube.exe!demo_run(demo * demo) 行 2412	C
+ 	vkcube.exe!WndProc(HWND__ * hWnd, unsigned int uMsg, unsigned __int64 wParam, __int64 lParam) 行 2438	C
+ 	[外部代码]	
+ 	vkcube.exe!WinMain(HINSTANCE__ * hInstance, HINSTANCE__ * hPrevInstance, char * pCmdLine, int nCmdShow) 行 3871	C
+
 
 
