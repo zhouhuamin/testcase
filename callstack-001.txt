@@ -4,7 +4,7 @@
  	renderdoc.dll!add_hooks() 行 61	C++
  	renderdoc.dll!DllMain(HINSTANCE__ * hModule, unsigned long ul_reason_for_call, void * lpReserved) 行 79	C++
 
-
+=====================================================
 >	renderdoc.dll!CheckExtFromString(const char * ext) 行 350	C++
  	renderdoc.dll!FetchEnabledExtensions() 行 443	C++
  	renderdoc.dll!CreateReplayDevice(RDCDriver rdcdriver, RDCFile * rdc, const ReplayOptions & opts, GLPlatform & platform, IReplayDriver * * & driver) 行 3898	C++
@@ -16,7 +16,7 @@
  	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
  	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
 
-
+=====================================================
  	renderdoc.dll!RenderDoc::FinishCaptureWriting(RDCFile * rdc, unsigned int frameNumber) 行 1714	C++
 >	renderdoc.dll!WrappedVulkan::EndFrameCapture(void * dev, void * wnd) 行 2204	C++
  	renderdoc.dll!RenderDoc::EndFrameCapture(void * dev, void * wnd) 行 814	C++
@@ -25,6 +25,16 @@
  	vkcube.exe!WndProc(HWND__ * hWnd, unsigned int uMsg, unsigned __int64 wParam, __int64 lParam) 行 2438	C
  	[外部代码]	
  	vkcube.exe!WinMain(HINSTANCE__ * hInstance, HINSTANCE__ * hPrevInstance, char * pCmdLine, int nCmdShow) 行 3871	C
+
+======================================================
+>	renderdoc.dll!WrappedVulkan::Initialise(VkInitParams & params, unsigned __int64 sectionVersion, const ReplayOptions & opts) 行 228	C++
+ 	renderdoc.dll!Vulkan_CreateReplayDevice(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 4692	C++
+ 	renderdoc.dll!RenderDoc::CreateReplayDriver(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 1655	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2110	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
 
 
 
