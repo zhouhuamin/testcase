@@ -37,4 +37,72 @@
  	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
 
 
+=====================================================
+
+ 	renderdoc.dll!SetupActionPointers(rdcarray<ActionDescription *> & actionTable, rdcarray<ActionDescription> & actions) 行 143	C++
+>	renderdoc.dll!WrappedOpenGL::ContextReplayLog(CaptureState readType, unsigned int startEventID, unsigned int endEventID, bool partial) 行 5301	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3478	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
+>	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2174	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+>	renderdoc.dll!WrappedOpenGL::AddAction(const ActionDescription & a) 行 5712	C++
+ 	renderdoc.dll!WrappedOpenGL::Serialise_glDispatchCompute<ReadSerialiser>(ReadSerialiser & ser, unsigned int num_groups_x, unsigned int num_groups_y, unsigned int num_groups_z) 行 343	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 3931	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 5351	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextReplayLog(CaptureState readType, unsigned int startEventID, unsigned int endEventID, bool partial) 行 5262	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3478	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+ 	renderdoc.dll!WrappedOpenGL::AddAction(const ActionDescription & a) 行 5711	C++
+>	renderdoc.dll!WrappedOpenGL::Serialise_glClear<ReadSerialiser>(ReadSerialiser & ser, unsigned int mask) 行 4522	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 4023	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 5351	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextReplayLog(CaptureState readType, unsigned int startEventID, unsigned int endEventID, bool partial) 行 5262	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3478	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+ 	renderdoc.dll!WrappedOpenGL::AddAction(const ActionDescription & a) 行 5711	C++
+>	renderdoc.dll!WrappedOpenGL::Serialise_glDrawElements<ReadSerialiser>(ReadSerialiser & ser, RDCGLenum mode, int count, RDCGLenum type, const void * indicesPtr) 行 1475	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 3956	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 5351	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextReplayLog(CaptureState readType, unsigned int startEventID, unsigned int endEventID, bool partial) 行 5262	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3478	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
 
