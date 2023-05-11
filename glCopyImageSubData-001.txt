@@ -1,0 +1,19 @@
+ 	renderdoc.dll!glEmulate::_glCopyImageSubData(unsigned int srcName, RDCGLenum srcTarget, int srcLevel, int srcX, int srcY, int srcZ, unsigned int dstName, RDCGLenum dstTarget, int dstLevel, int dstX, int dstY, int dstZ, int srcWidth, int srcHeight, int srcDepth) 行 1102	C++
+ 	renderdoc.dll!GLResourceManager::PrepareTextureInitialContents(ResourceId liveid, ResourceId origid, GLResource res) 行 979	C++
+ 	renderdoc.dll!GLResourceManager::ContextPrepare_InitialState(GLResource res) 行 250	C++
+>	renderdoc.dll!GLResourceManager::Prepare_InitialState(GLResource res) 行 559	C++
+ 	renderdoc.dll!ResourceManager<GLResourceManagerConfiguration>::PrepareInitialContents() 行 1005	C++
+ 	renderdoc.dll!WrappedOpenGL::StartFrameCapture(void * dev, void * wnd) 行 1879	C++
+ 	renderdoc.dll!RenderDoc::StartFrameCapture(void * dev, void * wnd) 行 548	C++
+ 	renderdoc.dll!StartFrameCapture(void * device, void * wndHandle) 行 219	C++
+ 	Noise3D.exe!ESWindowProc(HWND__ * hWnd, unsigned int uMsg, unsigned __int64 wParam, __int64 lParam) 行 95	C
+ 	[外部代码]	
+ 	Noise3D.exe!WinLoop(ESContext * esContext) 行 241	C
+ 	Noise3D.exe!main(int argc, char * * argv) 行 289	C
+    
+    
+    ERROR: 0:26: 'gl_VertexID' : undeclared identifier 
+    
+    
+    
+    
