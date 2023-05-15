@@ -1,0 +1,8 @@
+I'm not sure that that kind of dynamic compression is legal, but even if
+it is I do not expect that RenderDoc will ever support it.
+
+On 2023-05-12 16:26, 等待 wrote:
+> If the game initialization calls glCompressedTexImage2D, pass the last
+> parameter data as NULL, and then through glCopyImageSubData copy the
+> uncompressed format GL_ RGBA32UI to compressed format GL_ COMPRESSED_
+> RGBA_ ASTC_ 4x4, are there any plans to support this feature?
