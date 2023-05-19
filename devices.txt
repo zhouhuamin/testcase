@@ -1,0 +1,19 @@
+1.
+https://www.cnblogs.com/H-BolinBlog/p/5402794.html
+
+
+1. 通用串行总线控制器
+ USB Composite Device
+ 双击设备驱动，详细信息
+
+ 属性  硬件Id
+
+ 记录VID后面的数字， 1EBF
+
+ 在c:\Users\lenovo\.android文件夹中找到adb_usb.ini文件，打开，在文件中添加刚才找到的数字1EBF, 保存
+
+
+ 0x1EBF
+
+
+ 开启CMD, 输入 adb kill-server adb start-server  adb shell
