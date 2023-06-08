@@ -1,0 +1,17 @@
+ 	renderdoc.dll!DoSerialise<Serialiser<1> >(Serialiser<1> & ser, ProgramUniforms & el) 行 551	C++
+ 	renderdoc.dll!Serialiser<1>::SerialiseDispatch<Serialiser<1>,ProgramUniforms,0>::Do(Serialiser<1> & ser, ProgramUniforms & el) 行 1410	C++
+ 	renderdoc.dll!Serialiser<1>::Serialise<ProgramUniforms>(const rdcliteral & name, ProgramUniforms & el, SerialiserFlags flags) 行 245	C++
+ 	renderdoc.dll!ForAllProgramUniforms<0,1,ReadSerialiser>(ReadSerialiser * ser, CaptureState state, const PerStageReflections & srcStages, unsigned int progSrc, const PerStageReflections & dstStages, unsigned int progDst, std::map<int,int,std::less<int>,std::allocator<std::pair<int const ,int> > > * locTranslate) 行 912	C++
+ 	renderdoc.dll!SerialiseProgramUniforms<ReadSerialiser>(ReadSerialiser & ser, CaptureState state, const PerStageReflections & stages, unsigned int prog, std::map<int,int,std::less<int>,std::allocator<std::pair<int const ,int> > > * locTranslate) 行 1188	C++
+ 	renderdoc.dll!GLResourceManager::Serialise_InitialState<ReadSerialiser>(ReadSerialiser & ser, ResourceId id, GLResourceRecord * record, const GLInitialContents * initial) 行 1349	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 3571	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3441	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+>	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
