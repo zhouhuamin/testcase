@@ -104,5 +104,31 @@
  	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
 
 
+>	renderdoc.dll!GLResourceManager::Serialise_InitialState<ReadSerialiser>(ReadSerialiser & ser, ResourceId id, GLResourceRecord * record, const GLInitialContents * initial) 行 1169	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 3571	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3441	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+>	renderdoc.dll!GLResourceManager::Apply_InitialState(GLResource live, const GLInitialContents & initial) 行 2225	C++
+ 	renderdoc.dll!ResourceManager<GLResourceManagerConfiguration>::ApplyInitialContents() 行 1355	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3476	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
+
+
 
 
