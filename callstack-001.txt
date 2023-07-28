@@ -142,6 +142,14 @@
 
 
 
+>	renderdoc.dll!glEmulate::_glGetTexImage(RDCGLenum target, int level, const RDCGLenum format, const RDCGLenum type, void * pixels) 行 2637	C++
+ 	renderdoc.dll!GLResourceManager::Serialise_InitialState<WriteSerialiser>(WriteSerialiser & ser, ResourceId id, GLResourceRecord * record, const GLInitialContents * initial) 行 1674	C++
+ 	renderdoc.dll!GLResourceManager::Serialise_InitialState(WriteSerialiser & ser, ResourceId id, GLResourceRecord * record, const GLInitialContents * initial) 行 1878	C++
+ 	renderdoc.dll!ResourceManager<GLResourceManagerConfiguration>::InsertInitialContentsChunks(WriteSerialiser & ser) 行 1573	C++
+ 	renderdoc.dll!WrappedOpenGL::EndFrameCapture(void * dev, void * wnd) 行 2346	C++
+ 	renderdoc.dll!RenderDoc::EndFrameCapture(void * dev, void * wnd) 行 814	C++
+ 	renderdoc.dll!EndFrameCapture(void * device, void * wndHandle) 行 234	C++
+ 	Simple_Texture2D.exe!ESWindowProc(HWND__ * hWnd, unsigned int uMsg, unsigned __int64 wParam, __int64 lParam) 行 88	C
 
 
 
