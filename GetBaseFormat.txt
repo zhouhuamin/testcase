@@ -1,0 +1,178 @@
+>	renderdoc.dll!GetDataType(RDCGLenum internalFormat) 行 686	C++
+ 	renderdoc.dll!WrappedOpenGL::Common_glTextureBufferEXT(ResourceId texId, RDCGLenum target, RDCGLenum internalformat, unsigned int buffer) 行 6954	C++
+ 	renderdoc.dll!WrappedOpenGL::glTextureBufferEXT(unsigned int texture, RDCGLenum target, RDCGLenum internalformat, unsigned int buffer) 行 6983	C++
+ 	renderdoc.dll!GLReplay::InitDebugData() 行 801	C++
+ 	renderdoc.dll!GLReplay::SetReplayData(GLWindowingData data) 行 259	C++
+ 	renderdoc.dll!CreateReplayDevice(RDCDriver rdcdriver, RDCFile * rdc, const ReplayOptions & opts, GLPlatform & platform, IReplayDriver * * & driver) 行 3926	C++
+ 	renderdoc.dll!GLES_CreateReplayDevice(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 4016	C++
+ 	renderdoc.dll!RenderDoc::CreateReplayDriver(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 1655	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2110	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+>	renderdoc.dll!WrappedOpenGL::Common_glTextureBufferEXT(ResourceId texId, RDCGLenum target, RDCGLenum internalformat, unsigned int buffer) 行 6954	C++
+ 	renderdoc.dll!WrappedOpenGL::glTextureBufferEXT(unsigned int texture, RDCGLenum target, RDCGLenum internalformat, unsigned int buffer) 行 6983	C++
+ 	renderdoc.dll!GLReplay::InitDebugData() 行 801	C++
+ 	renderdoc.dll!GLReplay::SetReplayData(GLWindowingData data) 行 259	C++
+ 	renderdoc.dll!CreateReplayDevice(RDCDriver rdcdriver, RDCFile * rdc, const ReplayOptions & opts, GLPlatform & platform, IReplayDriver * * & driver) 行 3926	C++
+ 	renderdoc.dll!GLES_CreateReplayDevice(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 4016	C++
+ 	renderdoc.dll!RenderDoc::CreateReplayDriver(RDCFile * rdc, const ReplayOptions & opts, IReplayDriver * * driver) 行 1655	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2110	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+>	renderdoc.dll!GLResourceManager::Serialise_InitialState<ReadSerialiser>(ReadSerialiser & ser, ResourceId id, GLResourceRecord * record, const GLInitialContents * initial) 行 1449	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 3571	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3441	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+ 	renderdoc.dll!WrappedOpenGL::CreateTextureImage(unsigned int tex, RDCGLenum internalFormat, RDCGLenum initFormatHint, RDCGLenum initTypeHint, RDCGLenum textype, int dim, int width, int height, int depth, int samples, int mips) 行 2945	C++
+>	renderdoc.dll!GLResourceManager::Serialise_InitialState<ReadSerialiser>(ReadSerialiser & ser, ResourceId id, GLResourceRecord * record, const GLInitialContents * initial) 行 1563	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 3571	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3441	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+>	renderdoc.dll!WrappedOpenGL::CreateReplayBackbuffer(const GLInitParams & params, ResourceId fboOrigId, unsigned int & fbo, rdcstr bbname) 行 798	C++
+ 	renderdoc.dll!WrappedOpenGL::Serialise_ContextConfiguration<ReadSerialiser>(ReadSerialiser & ser, void * ctx) 行 1345	C++
+ 	renderdoc.dll!WrappedOpenGL::ProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 4735	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextProcessChunk(ReadSerialiser & ser, GLChunk chunk) 行 5351	C++
+ 	renderdoc.dll!WrappedOpenGL::ContextReplayLog(CaptureState readType, unsigned int startEventID, unsigned int endEventID, bool partial) 行 5262	C++
+ 	renderdoc.dll!WrappedOpenGL::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 3478	C++
+ 	renderdoc.dll!GLReplay::ReadLogInitialisation(RDCFile * rdc, bool storeStructuredBuffers) 行 118	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2148	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+ 	renderdoc.dll!GLReplay::CacheTexture(ResourceId id) 行 669	C++
+>	renderdoc.dll!GLReplay::GetTextures() 行 766	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2163	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+ 	renderdoc.dll!IsDepthStencilFormat(RDCGLenum internalFormat) 行 1626	C++
+ 	renderdoc.dll!GLReplay::SavePipelineState(unsigned int eventId) 行 1375	C++
+ 	renderdoc.dll!ReplayController::FetchPipelineState(unsigned int eventId) 行 2207	C++
+>	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2181	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+>	renderdoc.dll!GetTextureCompleteStatus(RDCGLenum target, unsigned int tex, unsigned int sampler) 行 1220	C++
+ 	renderdoc.dll!GLReplay::SavePipelineState(unsigned int eventId) 行 1416	C++
+ 	renderdoc.dll!ReplayController::FetchPipelineState(unsigned int eventId) 行 2207	C++
+ 	renderdoc.dll!ReplayController::PostCreateInit(IReplayDriver * device, RDCFile * rdc) 行 2181	C++
+ 	renderdoc.dll!ReplayController::CreateDevice(RDCFile * rdc, const ReplayOptions & opts) 行 2115	C++
+ 	renderdoc.dll!CaptureFile::OpenCapture(const ReplayOptions & opts, std::function<void __cdecl(float)> progress) 行 371	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 631	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+ 	renderdoc.dll!GetBaseFormat(RDCGLenum internalFormat) 行 578	C++
+ 	renderdoc.dll!IsDepthStencilFormat(RDCGLenum internalFormat) 行 1626	C++
+ 	renderdoc.dll!GLReplay::RenderTextureInternal(TextureDisplay cfg, TexDisplayFlags flags) 行 302	C++
+ 	renderdoc.dll!GLReplay::RenderTexture(TextureDisplay cfg) 行 37	C++
+>	renderdoc.dll!ReplayOutput::DisplayTex() 行 959	C++
+ 	renderdoc.dll!ReplayOutput::Display() 行 793	C++
+ 	renderdoccmd.exe!DisplayRendererPreview(IReplayController * renderer, TextureDisplay & displayCfg, unsigned int width, unsigned int height, unsigned int numLoops) 行 231	C++
+ 	renderdoccmd.exe!DisplayRendererPreview(IReplayController * renderer, unsigned int width, unsigned int height, unsigned int numLoops) 行 124	C++
+ 	renderdoccmd.exe!ReplayCommand::Execute(const CaptureOptions & __formal) 行 639	C++
+ 	renderdoccmd.exe!renderdoccmd(GlobalEnvironment & env, std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > & argv) 行 1694	C++
+ 	renderdoccmd.exe!main(int __formal, char * __formal) 行 847	C++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
