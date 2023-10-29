@@ -1,0 +1,55 @@
+
+foundation\graphic\graphic_2d\frameworks\vulkan_layers\swapchain_layer
+VKAPI_ATTR VkResult CreateImages(int32_t &numImages, Swapchain* swapchain, const VkSwapchainCreateInfoKHR* createInfo,
+    VkImageCreateInfo &imageCreate, VkDevice device)
+{
+    VkLayerDispatchTable* pDisp =
+        GetLayerDataPtr(GetDispatchKey(device))->deviceDispatchTable.get();
+    Surface &surface = *SurfaceFromHandle(createInfo->surface);
+    NativeWindow* window = surface.window;
+    if (createInfo->oldSwapchain != VK_NULL_HANDLE) {
+        SWLOGI("recreate swapchain ,clean buffer queue");
+        window->surface->CleanCache();
+    }
+    VkResult result = VK_SUCCESS;
+    for (int32_t i = 0; i < numImages; i++) {
+        Swapchain::Image &img = swapchain->images[i];
+        NativeWindowBuffer* buffer = nullptr;
+        int err = NativeWindowRequestBuffer(window, &buffer, &img.requestFence);
+        if (err != OHOS::GSERROR_OK) {
+            SWLOGE("RequestBuffer[%{public}u] failed: (%{public}d)", i, err);
+            result = VK_ERROR_SURFACE_LOST_KHR;
+            break;
+        }
+        img.buffer = buffer;
+        img.requested = true;
+        imageCreate.extent = VkExtent3D {static_cast<uint32_t>(img.buffer->sfbuffer->GetSurfaceBufferWidth()),
+                                          static_cast<uint32_t>(img.buffer->sfbuffer->GetSurfaceBufferHeight()), 1};
+        ((VkNativeBufferOHOS*)(imageCreate.pNext))->handle =
+            reinterpret_cast<struct OHBufferHandle *>(img.buffer->sfbuffer->GetBufferHandle());
+        result = pDisp->CreateImage(device, &imageCreate, nullptr, &img.image);
+        if (result != VK_SUCCESS) {
+            SWLOGD("vkCreateImage native buffer failed: %{public}u", result);
+            break;
+        }
+    }
+
+foundation\graphic\graphic_2d\frameworks\surface\include\native_window.h
+
+
+foundation\graphic\graphic_2d\interfaces\inner_api\surface\surface_buffer.h
+
+
+
+foundation\graphic\graphic_2d\frameworks\surface\include\buffer_handle.h
+
+foundation\graphic\graphic_2d\utils\buffer_handle\export\buffer_handle_utils.h
+
+
+
+foundation\graphic\graphic_2d\utils\buffer_handle\src\buffer_handle.cpp
+
+foundation\graphic\graphic_2d\interfaces\inner_api\surface\external_window.h
+
+
+
