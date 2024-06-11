@@ -1,0 +1,314 @@
+(gdb) bt                                                                                                                                                                                                                                    
+#0  lp_scene_bin_cmd_with_state (scene=0x7fffeccadd50, x=2, y=2, state=0x26f26b0, cmd=LP_RAST_OP_TRIANGLE_1, arg=...) at ../src/gallium/drivers/llvmpipe/lp_scene.h:360                                                                     
+#1  0x00007ffff4c2e07f in lp_setup_bin_triangle (setup=0x4d1280, tri=0x26fd530, use_32bits=false, opaque=true, bbox=0x7fffffffd0c0, nr_planes=3, viewport_index=0) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:963                    
+#2  0x00007ffff4c2d607 in do_triangle_ccw (setup=0x4d1280, position=0x7fffffffd600, v0=0x25b1cb0, v1=0x25b1cc0, v2=0x25b1cd0, frontfacing=true) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:747                                       
+#3  0x00007ffff4c2e233 in retry_triangle_ccw (setup=0x4d1280, position=0x7fffffffd600, v0=0x25b1cb0, v1=0x25b1cc0, v2=0x25b1cd0, front=true) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:1020                                         
+#4  0x00007ffff4c2ea64 in triangle_both (setup=0x4d1280, v0=0x25b1cb0, v1=0x25b1cc0, v2=0x25b1cd0) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:1230                                                                                   
+#5  0x00007ffff4c20f2e in first_triangle (setup=0x4d1280, v0=0x25b1cb0, v1=0x25b1cc0, v2=0x25b1cd0) at ../src/gallium/drivers/llvmpipe/lp_setup.c:128                                                                                       
+#6  0x00007ffff4c3037e in lp_setup_draw_arrays (vbr=0x4d1280, start=0, nr=3) at ../src/gallium/drivers/llvmpipe/lp_setup_vbuf.c:451                                                                                                         
+#7  0x00007ffff4b39b91 in draw_pt_emit_linear (emit=0x4d1070, vert_info=0x7fffffffd8f0, prim_info=0x7fffffffdb00) at ../src/gallium/auxiliary/draw/draw_pt_emit.c:281                                                                       
+#8  0x00007ffff4b33003 in emit (emit=0x4d1070, vert_info=0x7fffffffd8f0, prim_info=0x7fffffffdb00) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:488                                                                 
+#9  0x00007ffff4b3381f in llvm_pipeline_generic (middle=0x4d0f60, fetch_info=0x0, in_prim_info=0x7fffffffdb00) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:703                                                     
+#10 0x00007ffff4b33a22 in llvm_middle_end_linear_run (middle=0x4d0f60, start=0, count=3, prim_flags=0) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:784                                                             
+#11 0x00007ffff4a9cee7 in vsplit_segment_simple_linear (vsplit=0x4ce260, flags=0, istart=0, icount=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit_tmp.h:223                                                                             
+#12 0x00007ffff4a9d247 in vsplit_run_linear (frontend=0x4ce260, start=0, count=3) at ../src/gallium/auxiliary/draw/draw_split_tmp.h:64                                                                                                      
+#13 0x00007ffff4a90da0 in draw_pt_arrays (draw=0x4b9980, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdeb4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:161                                           
+#14 0x00007ffff4a9154c in draw_instances (draw=0x4b9980, drawid_offset=0, info=0x7fffffffdec0, draws=0x7fffffffdeb4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493                                                            
+#15 0x00007ffff4a91898 in draw_vbo (draw=0x4b9980, info=0x7fffffffdec0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdeb4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628                           
+#16 0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4ac750, info=0x7fffffffdec0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdeb4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150                                  
+#17 0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4ac750, info=0x7fffffffdec0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdeb4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276                               
+#18 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f507f0, info=0x7fffffffdec0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdeb4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262                                       
+#19 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdec0, drawid_offset=0, draws=0x7fffffffdeb4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146                                                                                
+#20 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199                                                                                  
+#21 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407                                                                                                                                       
+#22 0x0000000000402957 in Draw (esContext=0x7fffffffdfe0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197                                                                                 
+#23 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfe0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177                                                                                    
+#24 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe168) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204                                                                                    (gdb)                                                                                                                                                   
+(gdb) bt                                                                                                                                                                                                                                    
+#0  lp_rast_get_color_block_pointer (task=0x499938, buf=0, x=204, y=128, layer=0) at ../src/gallium/drivers/llvmpipe/lp_rast_priv.h:185                                                                                                     
+#1  0x00007ffff4c0778f in lp_rast_shade_quads_mask_sample (task=0x499938, inputs=0x26fa6b0, x=204, y=128, mask=63283) at ../src/gallium/drivers/llvmpipe/lp_rast.c:439                                                                      
+#2  0x00007ffff4c0e881 in do_block_4_2 (task=0x499938, tri=0x26fa690, plane=0x7fffebdffcb0, x=204, y=128, c=0x7fffebdffbe0) at ../src/gallium/drivers/llvmpipe/lp_rast_tri_tmp.h:87                                                         
+#3  0x00007ffff4c0ebc4 in do_block_16_2 (task=0x499938, tri=0x26fa690, plane=0x7fffebdffcb0, x=192, y=128, c=0x7fffebdffc80) at ../src/gallium/drivers/llvmpipe/lp_rast_tri_tmp.h:171                                                       
+#4  0x00007ffff4c0f0c0 in lp_rast_triangle_2 (task=0x499938, arg=...) at ../src/gallium/drivers/llvmpipe/lp_rast_tri_tmp.h:326                                                                                                              
+#5  0x00007ffff4c08411 in tri_rasterize_bin (task=0x499938, bin=0x48dee8, x=3, y=2) at ../src/gallium/drivers/llvmpipe/lp_rast.c:960                                                                                                        
+#6  0x00007ffff4c085c1 in rasterize_bin (task=0x499938, bin=0x48dee8, x=3, y=2) at ../src/gallium/drivers/llvmpipe/lp_rast.c:1003                                                                                                           
+#7  0x00007ffff4c086f8 in rasterize_scene (task=0x499938, scene=0x7fffeccadd50) at ../src/gallium/drivers/llvmpipe/lp_rast.c:1067                                                                                                           
+#8  0x00007ffff4c089d8 in thread_function (init_data=0x499938) at ../src/gallium/drivers/llvmpipe/lp_rast.c:1202                                                                                                                            
+#9  0x00007ffff4127c45 in impl_thrd_routine (p=0x487e60) at ../src/c11/impl/threads_posix.c:67                                                                                                                                              
+#10 0x00007ffff7bb81b7 in start_thread (arg=<optimized out>) at pthread_create.c:447                                                                                                                                                        
+#11 0x00007ffff7c3a39c in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78           
+
+(gdb) bt
+#0  draw_llvm_create (draw=0x4b2000, context=0x4a3fc0) at ../src/gallium/auxiliary/draw/draw_llvm.c:389
+#1  0x00007ffff4a77f8c in draw_create_context (pipe=0x4a4dd0, context=0x4a3fc0, try_llvm=true) at ../src/gallium/auxiliary/draw/draw_context.c:80
+#2  0x00007ffff4a78056 in draw_create_with_llvm_context (pipe=0x4a4dd0, context=0x4a3fc0) at ../src/gallium/auxiliary/draw/draw_context.c:118
+#3  0x00007ffff4c000b6 in llvmpipe_create_context (screen=0x4873e0, priv=0x0, flags=264) at ../src/gallium/drivers/llvmpipe/lp_context.c:275
+#4  0x00007ffff41b8142 in st_api_create_context (fscreen=0x482fb0, attribs=0x7fffffffdc50, error=0x7fffffffdc4c, shared_ctx=0x0) at ../src/mesa/state_tracker/st_manager.c:987
+#5  0x00007ffff40a1b36 in dri_create_context (screen=0x482fb0, api=API_OPENGLES2, visual=0x491030, ctx_config=0x7fffffffdd80, error=0x7fffffffde54, sharedContextPrivate=0x0, loaderPrivate=0x489650)
+    at ../src/gallium/frontends/dri/dri_context.c:178
+#6  0x00007ffff40a78e2 in driCreateContextAttribs (psp=0x482fb0, api=4, config=0x491030, shared=0x0, num_attribs=2, attribs=0x7fffffffde10, error=0x7fffffffde54, data=0x489650) at ../src/gallium/frontends/dri/dri_util.c:631
+#7  0x00007ffff7f7d4d2 in dri2_create_context (disp=0x415670, conf=0x497600, share_list=0x0, attrib_list=0x7fffffffdf74) at ../src/egl/drivers/dri2/egl_dri2.c:1554
+#8  0x00007ffff7f6b512 in eglCreateContext (dpy=0x415670, config=0x497600, share_list=0x0, attrib_list=0x7fffffffdf74) at ../src/egl/main/eglapi.c:900
+#9  0x0000000000402ca0 in esCreateWindow (esContext=0x7fffffffdfd0, title=0x40418b "Hello Triangle", width=320, height=240, flags=0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/esUtil.c:231
+#10 0x00000000004029c4 in esMain (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:211
+#11 0x0000000000403488 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:201
+(gdb)
+
+
+(gdb) bt
+#0  draw_llvm_make_variant_key (llvm=0x7ffff3e70010, store=0x7fffffffce80 "x") at ../src/gallium/auxiliary/draw/draw_llvm.c:2027
+#1  0x00007ffff4b329df in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:342
+#2  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#3  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#4  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#5  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#6  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#7  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#8  0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#9  st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#10 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#11 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#12 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#13 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#14 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+Thread 1 "Hello_Triangle" hit Breakpoint 14, draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:482
+(gdb) bt
+#0  draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:482
+#1  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#2  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#3  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#4  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#5  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#6  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#7  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#8  0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#9  st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#10 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#11 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#12 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#13 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#14 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+
+(gdb) bt
+#0  draw_get_ir_cache_key (nir=0x1e9dbf0, key=0x7fffffffce80, key_size=20, val_32bit=1, ir_sha1_cache_key=0x7fffffffcdd0 "") at ../src/gallium/auxiliary/draw/draw_llvm.c:452
+#1  0x00007ffff4b270e1 in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:501
+#2  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#3  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#4  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#5  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#6  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#7  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#8  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#9  0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#10 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#11 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#12 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#13 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#14 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#15 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+
+(gdb) bt
+#0  create_vs_jit_types (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:331
+#1  0x00007ffff4b2715b in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:515
+#2  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#3  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#4  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#5  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#6  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#7  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#8  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#9  0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#10 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#11 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#12 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#13 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#14 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#15 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+
+#0  create_vs_jit_context_type (gallivm=0x26e9380, struct_name=0x7ffff6cd0f40 "draw_vs_jit_context") at ../src/gallium/auxiliary/draw/draw_llvm.c:153
+#1  0x00007ffff4b26b7e in create_vs_jit_types (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:333
+#2  0x00007ffff4b2715b in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:515
+#3  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#4  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#5  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#6  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#7  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#8  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#9  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#10 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#11 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#12 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#13 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#14 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#15 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#16 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+#0  create_jit_dvbuffer_type (gallivm=0x26e9380, struct_name=0x7ffff6cd0f54 "draw_vertex_buffer") at ../src/gallium/auxiliary/draw/draw_llvm.c:124
+#1  0x00007ffff4b26bea in create_vs_jit_types (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:339
+#2  0x00007ffff4b2715b in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:515
+#3  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#4  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#5  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#6  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#7  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#8  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#9  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#10 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#11 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#12 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#13 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#14 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#15 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#16 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+#0  create_jit_vertex_buffer_type (gallivm=0x26e9380, struct_name=0x7ffff6cd0f67 "pipe_vertex_buffer") at ../src/gallium/auxiliary/draw/draw_llvm.c:249
+#1  0x00007ffff4b26c25 in create_vs_jit_types (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:342
+#2  0x00007ffff4b2715b in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:515
+#3  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#4  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#5  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#6  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#7  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#8  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#9  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#10 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#11 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#12 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#13 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#14 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#15 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#16 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+#0  draw_llvm_generate (llvm=0x7ffff3e70010, variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:1553
+#1  0x00007ffff4b27235 in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:528
+#2  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#3  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#4  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#5  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#6  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#7  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#8  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#9  0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#10 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#11 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#12 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#13 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#14 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#15 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+#0  get_context_ptr_type (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:350
+#1  0x00007ffff4b2a647 in draw_llvm_generate (llvm=0x7ffff3e70010, variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:1612
+#2  0x00007ffff4b27235 in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:528
+#3  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#4  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#5  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#6  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#7  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#8  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#9  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#10 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#11 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#12 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#13 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#14 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#15 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#16 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+
+#0  get_vertex_header_ptr_type (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:376
+#1  0x00007ffff4b2a687 in draw_llvm_generate (llvm=0x7ffff3e70010, variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:1614
+#2  0x00007ffff4b27235 in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:528
+#3  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#4  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#5  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#6  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#7  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#8  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#9  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#10 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#11 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#12 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#13 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#14 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#15 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#16 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+
+#0  get_buffer_ptr_type (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:359
+#1  0x00007ffff4b2a6a9 in draw_llvm_generate (llvm=0x7ffff3e70010, variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:1615
+#2  0x00007ffff4b27235 in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:528
+#3  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#4  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#5  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#6  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#7  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#8  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#9  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#10 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#11 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#12 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#13 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#14 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#15 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#16 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+#0  get_vb_ptr_type (variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:368
+#1  0x00007ffff4b2a710 in draw_llvm_generate (llvm=0x7ffff3e70010, variant=0x499f10) at ../src/gallium/auxiliary/draw/draw_llvm.c:1619
+#2  0x00007ffff4b27235 in draw_llvm_create_variant (llvm=0x7ffff3e70010, num_inputs=1, key=0x7fffffffce80) at ../src/gallium/auxiliary/draw/draw_llvm.c:528
+#3  0x00007ffff4b32bab in llvm_middle_end_prepare (middle=0x4c95e0, in_prim=MESA_PRIM_TRIANGLES, opt=3, max_vertices=0x4c6918) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:383
+#4  0x00007ffff4a9f2dc in vsplit_prepare (frontend=0x4c68e0, in_prim=MESA_PRIM_TRIANGLES, middle=0x4c95e0, opt=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit.c:234
+#5  0x00007ffff4a90be7 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:120
+#6  0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#7  0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#8  0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#9  0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#10 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#11 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#12 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#13 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#14 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#15 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#16 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+
+#0  lp_scene_bin_cmd_with_state (scene=0x7fffeccadd50, x=2, y=0, state=0x7fffeccae280, cmd=LP_RAST_OP_TRIANGLE_2, arg=...) at ../src/gallium/drivers/llvmpipe/lp_scene.h:356
+#1  0x00007ffff4c2e07f in lp_setup_bin_triangle (setup=0x4c9900, tri=0x7fffeccb9100, use_32bits=false, opaque=true, bbox=0x7fffffffd0b0, nr_planes=3, viewport_index=0) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:963
+#2  0x00007ffff4c2d607 in do_triangle_ccw (setup=0x4c9900, position=0x7fffffffd5f0, v0=0x26d7a30, v1=0x26d7a40, v2=0x26d7a50, frontfacing=true) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:747
+#3  0x00007ffff4c2e233 in retry_triangle_ccw (setup=0x4c9900, position=0x7fffffffd5f0, v0=0x26d7a30, v1=0x26d7a40, v2=0x26d7a50, front=true) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:1020
+#4  0x00007ffff4c2ea64 in triangle_both (setup=0x4c9900, v0=0x26d7a30, v1=0x26d7a40, v2=0x26d7a50) at ../src/gallium/drivers/llvmpipe/lp_setup_tri.c:1230
+#5  0x00007ffff4c20f2e in first_triangle (setup=0x4c9900, v0=0x26d7a30, v1=0x26d7a40, v2=0x26d7a50) at ../src/gallium/drivers/llvmpipe/lp_setup.c:128
+#6  0x00007ffff4c3037e in lp_setup_draw_arrays (vbr=0x4c9900, start=0, nr=3) at ../src/gallium/drivers/llvmpipe/lp_setup_vbuf.c:451
+#7  0x00007ffff4b39b91 in draw_pt_emit_linear (emit=0x4c96f0, vert_info=0x7fffffffd8e0, prim_info=0x7fffffffdaf0) at ../src/gallium/auxiliary/draw/draw_pt_emit.c:281
+#8  0x00007ffff4b33003 in emit (emit=0x4c96f0, vert_info=0x7fffffffd8e0, prim_info=0x7fffffffdaf0) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:488
+#9  0x00007ffff4b3381f in llvm_pipeline_generic (middle=0x4c95e0, fetch_info=0x0, in_prim_info=0x7fffffffdaf0) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:703
+#10 0x00007ffff4b33a22 in llvm_middle_end_linear_run (middle=0x4c95e0, start=0, count=3, prim_flags=0) at ../src/gallium/auxiliary/draw/draw_pt_fetch_shade_pipeline_llvm.c:784
+#11 0x00007ffff4a9cee7 in vsplit_segment_simple_linear (vsplit=0x4c68e0, flags=0, istart=0, icount=3) at ../src/gallium/auxiliary/draw/draw_pt_vsplit_tmp.h:223
+#12 0x00007ffff4a9d247 in vsplit_run_linear (frontend=0x4c68e0, start=0, count=3) at ../src/gallium/auxiliary/draw/draw_split_tmp.h:64
+#13 0x00007ffff4a90da0 in draw_pt_arrays (draw=0x4b2000, prim=MESA_PRIM_TRIANGLES, index_bias_varies=false, draw_info=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:161
+#14 0x00007ffff4a9154c in draw_instances (draw=0x4b2000, drawid_offset=0, info=0x7fffffffdeb0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/draw/draw_pt.c:493
+#15 0x00007ffff4a91898 in draw_vbo (draw=0x4b2000, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1, patch_vertices=3 '\003') at ../src/gallium/auxiliary/draw/draw_pt.c:628
+#16 0x00007ffff4c00e7b in llvmpipe_draw_vbo (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/drivers/llvmpipe/lp_draw_arrays.c:150
+#17 0x00007ffff4a72072 in cso_draw_vbo_default (pipe=0x4a4dd0, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.c:276
+#18 0x00007ffff41a7735 in cso_draw_vbo (cso=0x1f48f30, info=0x7fffffffdeb0, drawid_offset=0, indirect=0x0, draws=0x7fffffffdea4, num_draws=1) at ../src/gallium/auxiliary/cso_cache/cso_context.h:262
+#19 st_draw_gallium (ctx=0x7fffec9bf010, info=0x7fffffffdeb0, drawid_offset=0, draws=0x7fffffffdea4, num_draws=1) at ../src/mesa/state_tracker/st_draw.c:146
+#20 0x00007ffff453c6eb in _mesa_draw_arrays (ctx=0x7fffec9bf010, mode=4, start=0, count=3, numInstances=1, baseInstance=0) at ../src/mesa/main/draw.c:1199
+#21 0x00007ffff453d121 in _mesa_DrawArrays (mode=4, start=0, count=3) at ../src/mesa/main/draw.c:1407
+#22 0x0000000000402957 in Draw (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Chapter_2/Hello_Triangle/Hello_Triangle.c:197
+#23 0x0000000000403424 in WinLoop (esContext=0x7fffffffdfd0) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:177
+#24 0x00000000004034a0 in main (argc=1, argv=0x7fffffffe158) at /XXXXX/XXXXX/02-opengl/opengles3-book-master/Common/Source/LinuxX11/esUtil_X11.c:204
+
+
+
+
+
+
+
+
+
+
+
+
