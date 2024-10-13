@@ -1,0 +1,36 @@
+BecomeRemoteServer
+	ActiveRemoteClientThread
+		Tick()
+			RefreshPreviewWindow()
+				InitPreviewWindow()
+					m_FrameRecord = m_Replay->GetFrameRecord(); // FrameRecord GetFrameRecord() { return m_FrameRecord; }
+				m_Replay->BindOutputWindow(m_PreviewOutput, false);
+				m_Replay->ClearOutputWindowColor()
+				m_Replay->GetOutputWindowDimensions()
+				m_Replay->RenderCheckerboard()
+				const ActionDescription *curDraw = FindAction(m_FrameRecord.actionList, m_EventID);
+				for(ResourceId id : curDraw->outputs)
+				cfg.resourceId = m_Replay->GetLiveID(cfg.resourceId);
+				TextureDescription texInfo = m_Replay->GetTexture(cfg.resourceId);
+				m_Replay->RenderTexture(cfg);
+					GLReplay::RenderTextureInternal()
+				m_Replay->FlipOutputWindow(m_PreviewOutput);
+					SwapBuffers(&outw);
+				m_PreviewWindow(true, m_Replay->GetSupportedWindowSystems());
+
+actionList ?
+GetReplay()->WriteFrameRecord().actionList = m_ParentAction.children;		
+
+m_ParentAction ?
+m_ActionStack.push_back(&m_ParentAction);
+
+m_ActionStack ?
+m_ActionStack.back()->children.push_back(action); // WrappedOpenGL::AddAction
+
+AddAction ?
+      if(type == eGL_TEXTURE)
+        action.outputs[att] = GetResourceManager()->GetOriginalID(
+            GetResourceManager()->GetResID(TextureRes(GetCtx(), depth)));
+WrappedOpenGL::Serialise_glClear
+WrappedOpenGL::Serialise_glDrawArrays
+WrappedOpenGL::Serialise_Present
