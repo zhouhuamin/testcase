@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EventClient - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Thinkpad\AppData\Local\Temp\RSP9802.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/EventClient.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\GB_PRO\TestDeviceService\TestAsWeight\AlarmMsgHelper.cpp"
+"E:\GB_PRO\TestDeviceService\TestAsWeight\ControlCmdHandler.cpp"
+"E:\GB_PRO\TestDeviceService\TestAsWeight\EventClientDlg.cpp"
+"E:\GB_PRO\TestDeviceService\TestAsWeight\SysUtil.cpp"
+]
+Creating command line "cl.exe @C:\Users\Thinkpad\AppData\Local\Temp\RSP9802.tmp" 
+Creating temporary file "C:\Users\Thinkpad\AppData\Local\Temp\RSP9803.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/EventClient.pdb" /machine:I386 /out:"Release/EventClient.exe" 
+.\Release\AlarmMsgHelper.obj
+.\Release\ControlCmdHandler.obj
+.\Release\EventClient.obj
+.\Release\EventClientDlg.obj
+.\Release\MutexGuard.obj
+.\Release\StdAfx.obj
+.\Release\SysMutex.obj
+.\Release\SysUtil.obj
+.\Release\EventClient.res
+]
+Creating command line "link.exe @C:\Users\Thinkpad\AppData\Local\Temp\RSP9803.tmp"
+<h3>Output Window</h3>
+Compiling...
+AlarmMsgHelper.cpp
+ControlCmdHandler.cpp
+EventClientDlg.cpp
+SysUtil.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+EventClient.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
